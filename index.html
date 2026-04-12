@@ -285,6 +285,12 @@
         gap: 16px;
         flex-wrap: wrap;
       }
+      .hero-actions .btn {
+        flex: 1;
+        justify-content: center;
+        min-width: 180px;
+        white-space: nowrap;
+      }
       .hero-stats {
         display: flex;
         gap: 40px;
@@ -1071,7 +1077,7 @@
           gap: 40px;
         }
         .hero-image {
-          order: -1;
+          order: 1;
         }
         .hero-image-frame::before {
           display: none;
@@ -1161,14 +1167,17 @@
       <div class="container">
         <div class="hero-grid">
           <div class="hero-text fade-in-left">
-            <p class="hero-eyebrow">Dentista em Fortaleza · DTM</p>
+            <p class="hero-eyebrow">Dentista em Fortaleza</p>
             <h1 class="hero-title">
               Cuidado que<br /><em>transforma</em> o<br />seu sorriso
             </h1>
             <p class="hero-desc">
-              Sou a Dra. Camila Lôbo, especialista em Odontologia e Disfunção
-              Temporomandibular (DTM) em Fortaleza/CE. Ofereço tratamentos
-              personalizados com foco no seu bem-estar e na sua saúde bucal.
+              Sou a Dra. Camila Lôbo, possuo residência em Odontologia
+              Hospitalar pelo Hospital Geral de Fortaleza/CE, com ampla
+              experiência clínica no cuidado de pacientes com dor orofacial.
+              Ofereço tratamentos individualizados com o objetivo de promover
+              alívio, reequilíbrio funcional e melhora significativa na sua
+              qualidade de vida.
             </p>
             <div class="hero-actions">
               <a
@@ -1187,16 +1196,16 @@
             </div>
             <div class="hero-stats">
               <div>
-                <div class="stat-number" data-count="5">0</div>
+                <div class="stat-number" data-count="4">0</div>
                 <div class="stat-label">Anos de experiência</div>
               </div>
               <div>
-                <div class="stat-number" data-count="300">0</div>
+                <div class="stat-number" data-count="3500">0</div>
                 <div class="stat-label">Pacientes atendidos</div>
               </div>
               <div>
-                <div class="stat-number" data-count="100">0</div>
-                <div class="stat-label">% de satisfação</div>
+                <div class="stat-number" data-count="500">0</div>
+                <div class="stat-label">casos em Dor Orofacial</div>
               </div>
             </div>
           </div>
@@ -1215,8 +1224,8 @@
               />
             </div>
             <div class="hero-badge">
-              <p>Especialista em</p>
-              <strong>DTM</strong>
+              <p>Residência em Odontologia Hospitalar</p>
+              <p style="font-size: 15px">Atuação em <strong>DTM</strong></p>
             </div>
           </div>
         </div>
@@ -1249,26 +1258,42 @@
           <div class="sobre-text fade-in-right">
             <span class="section-tag">Sobre mim</span>
             <h2 class="section-title">
-              Dentista em Fortaleza<br /><em>especialista em DTM</em>
+              Dentista em Fortaleza<br /><em>Odontologia Hospitalar</em>
             </h2>
             <div class="divider"></div>
-            <p>
+            <p style="text-align: justify">
               Meu compromisso é oferecer uma odontologia humanizada, que vai
               além do sorriso e cuida da sua saúde de forma integral. Sou
               apaixonada pelo que faço e fico feliz em cada paciente que
               transforma sua vida através do tratamento.
             </p>
-            <p>
-              Especializada em Disfunção Temporomandibular (DTM), ajudo
-              pacientes que sofrem com dores de cabeça, mandíbula, pescoço e
-              outros sintomas relacionados à articulação temporomandibular —
-              devolvendo qualidade de vida e bem-estar.
+            <p style="text-align: justify">
+              Com experiência no atendimento de Disfunção Temporomandibular
+              (DTM), ajudo pacientes que sofrem com dores de cabeça, mandíbula,
+              pescoço e outros sintomas relacionados à articulação
+              temporomandibular — promovendo alívio da dor, melhora funcional e
+              mais qualidade de vida.
+            </p>
+            <p style="text-align: justify">
+              Além da atuação em DTM, também ofereço um cuidado odontológico
+              completo e individualizado. Atendo pacientes com necessidades
+              especiais com acolhimento e sensibilidade, realizo procedimentos
+              de estética dentária com foco em naturalidade, acompanho o público
+              infantil com atenção e leveza, e executo cirurgias odontológicas
+              com segurança e precisão. Tudo com um olhar cuidadoso voltado ao
+              seu bem-estar e qualidade de vida.
             </p>
             <ul class="credential-list">
-              <li>Graduada em Odontologia</li>
-              <li>Especialização em DTM e Dor Orofacial</li>
-              <li>Atendimento em Fortaleza/CE</li>
-              <li>Membro de associações profissionais de Odontologia</li>
+              <li>
+                Graduada em Odontologia pela Universidade Federal do Ceará (UFC)
+              </li>
+              <li>
+                Residência em Odontologia Hospitalar - Hospital Geral de
+                Fortaleza (HGF)
+              </li>
+              <li>
+                Aperfeiçoamento Estética Dentária e Gengival - UP Dentistry
+              </li>
             </ul>
           </div>
         </div>
@@ -1306,7 +1331,7 @@
               cabeça, pescoço e articulação temporomandibular. Reabilitação
               completa para sua qualidade de vida.
             </p>
-            <span class="service-placeholder">Especialidade principal</span>
+            <span class="service-placeholder">Atuação principal</span>
           </div>
 
           <!-- Cards de serviço — preencher com os serviços reais -->
@@ -1318,10 +1343,11 @@
                 />
               </svg>
             </div>
-            <h3>Serviço em breve</h3>
+            <h3>Laserterapia</h3>
             <p>
-              Em breve este espaço será preenchido com os serviços oferecidos
-              pela Dra. Camila Lôbo.
+              Tecnologia que auxilia no alívio da dor, acelera a cicatrização e
+              reduz inflamações. Um recurso moderno, seguro e confortável, que
+              potencializa os resultados do seu tratamento.
             </p>
           </div>
 
@@ -1333,10 +1359,11 @@
                 />
               </svg>
             </div>
-            <h3>Serviço em breve</h3>
+            <h3>Estética Dentária</h3>
             <p>
-              Em breve este espaço será preenchido com os serviços oferecidos
-              pela Dra. Camila Lôbo.
+              Procedimentos voltados à harmonia do sorriso, com resultados
+              naturais e personalizados. Realce da sua estética com equilíbrio,
+              sutileza e segurança.
             </p>
           </div>
 
@@ -1348,10 +1375,11 @@
                 />
               </svg>
             </div>
-            <h3>Serviço em breve</h3>
+            <h3>Estética Gengival</h3>
             <p>
-              Em breve este espaço será preenchido com os serviços oferecidos
-              pela Dra. Camila Lôbo.
+              Correções e contornos gengivais que valorizam o sorriso e
+              proporcionam mais harmonia facial. Cuidado preciso para um
+              resultado natural e saudável.
             </p>
           </div>
 
@@ -1363,10 +1391,11 @@
                 />
               </svg>
             </div>
-            <h3>Serviço em breve</h3>
+            <h3>Clínica Geral</h3>
             <p>
-              Em breve este espaço será preenchido com os serviços oferecidos
-              pela Dra. Camila Lôbo.
+              Atendimento completo para prevenção, diagnóstico e tratamento da
+              saúde bucal. Cuidado contínuo para manter seu sorriso saudável em
+              todas as fases.
             </p>
           </div>
 
@@ -1378,10 +1407,61 @@
                 />
               </svg>
             </div>
-            <h3>Serviço em breve</h3>
+            <h3>Odontopediatria</h3>
             <p>
-              Em breve este espaço será preenchido com os serviços oferecidos
-              pela Dra. Camila Lôbo.
+              Atenção especializada para crianças, com foco em prevenção,
+              conforto e experiências positivas desde os primeiros cuidados com
+              a saúde bucal.
+            </p>
+          </div>
+
+          <div class="service-card fade-in" style="transition-delay: 0.1s">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M11 7H13V9H11V7M11 11H13V17H11V11M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                />
+              </svg>
+            </div>
+            <h3>Cirurgia Odontológica</h3>
+            <p>
+              Procedimentos realizados com técnica, segurança e planejamento
+              individualizado. Foco no bem-estar e em uma recuperação tranquila.
+            </p>
+          </div>
+
+          <div class="service-card fade-in" style="transition-delay: 0.2s">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M11 7H13V9H11V7M11 11H13V17H11V11M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                />
+              </svg>
+            </div>
+            <h3>Pacientes com Necessidades Especiais</h3>
+            <p>
+              Atendimento odontológico adaptado para pessoas que necessitam de
+              um cuidado diferenciado, seja por condições físicas, sensoriais,
+              emocionais ou sistêmicas. Cada consulta é conduzida com
+              acolhimento, paciência e atenção aos detalhes, garantindo
+              conforto, segurança e uma experiência tranquila.
+            </p>
+          </div>
+
+          <div class="service-card fade-in" style="transition-delay: 0.3s">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M11 7H13V9H11V7M11 11H13V17H11V11M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                />
+              </svg>
+            </div>
+            <h3>Atendimento Homecare</h3>
+            <p>
+              Atendimento odontológico no conforto do seu lar, com cuidado
+              humanizado e adaptado às suas necessidades. Ideal para pacientes
+              que necessitam de mais comodidade, seguranca, e atenção
+              individualizada.
             </p>
           </div>
         </div>
@@ -1416,41 +1496,40 @@
             <div class="diff-item">
               <div class="diff-num">01</div>
               <div>
-                <h4>Especialização em DTM</h4>
+                <h4>Foco em DTM e Dor Orofacial</h4>
                 <p>
-                  Diagnóstico preciso e tratamento especializado em Disfunção
-                  Temporomandibular, aliviando dores e recuperando sua qualidade
-                  de vida.
+                  Atuação direcionada ao diagnóstico e manejo das dores na face
+                  e mandíbula, com abordagem precisa e individualizada.
                 </p>
               </div>
             </div>
             <div class="diff-item">
               <div class="diff-num">02</div>
               <div>
-                <h4>Atendimento Humanizado</h4>
+                <h4>Atendimento Personalizado</h4>
                 <p>
-                  Cada paciente é único. Ofereço uma consulta personalizada, com
-                  escuta ativa e plano de tratamento individualizado.
+                  Cada paciente é atendido de forma única, com escuta atenta,
+                  planejamento cuidadoso e respeito às suas necessidades.
                 </p>
               </div>
             </div>
             <div class="diff-item">
               <div class="diff-num">03</div>
               <div>
-                <h4>Tecnologia e Inovação</h4>
+                <h4>Abordagem Atualizada</h4>
                 <p>
-                  Utilizo as mais modernas técnicas e equipamentos para garantir
-                  diagnósticos precisos e tratamentos eficientes.
+                  Condutas baseadas em conhecimento atual e técnicas modernas,
+                  proporcionando mais segurança, conforto e previsibilidade.
                 </p>
               </div>
             </div>
             <div class="diff-item">
               <div class="diff-num">04</div>
               <div>
-                <h4>Resultados Comprovados</h4>
+                <h4>Experiência e Cuidado Integral</h4>
                 <p>
-                  Centenas de pacientes transformados, com alívio das dores e
-                  recuperação do bem-estar e da autoestima.
+                  Um olhar completo sobre sua saúde, integrando função, estética
+                  e bem-estar para resultados que vão além do tratamento.
                 </p>
               </div>
             </div>
@@ -1821,7 +1900,7 @@
                 fill="#EA4335"
               />
             </svg>
-            Avaliar no Google
+            Confira no Google
           </a>
         </div>
       </div>
@@ -1948,10 +2027,7 @@
             <span class="section-tag">Onde me encontrar</span>
             <h2 class="section-title">Localização <em>&amp; contato</em></h2>
             <div class="divider"></div>
-            <p>
-              Atendo em Fortaleza/CE. Entre em contato para saber o endereço
-              completo da clínica e os horários disponíveis.
-            </p>
+            <p>Fortaleza, CE.</p>
             <ul class="loc-details">
               <li>
                 <div class="loc-icon">
@@ -1966,7 +2042,7 @@
                     style="display: block; font-size: 14px; margin-bottom: 2px"
                     >Localização</strong
                   >
-                  Fortaleza, Ceará – CE
+                  Av. Dr. Silas Munguba, 1140 - Parangaba
                 </div>
               </li>
               <li>
@@ -2056,9 +2132,8 @@
           <div class="footer-brand">
             <span class="logo">Dra. Camila <span>Lôbo</span></span>
             <p>
-              Dentista especializada em DTM e Disfunção Temporomandibular em
-              Fortaleza/CE. Cuidando da sua saúde e do seu sorriso com dedicação
-              e humanidade.
+              Dentista com atuação em DTM e Dor Orofacial em Fortaleza/CE.
+              Cuidando da sua saúde e do seu sorriso com dedicação e humanidade.
             </p>
           </div>
           <div class="footer-col">
@@ -2075,16 +2150,67 @@
             <h4>Contato</h4>
             <ul class="footer-links">
               <li>
-                <a href="https://wa.me/5585998372445" target="_blank"
-                  >(85) 99837-2445</a
+                <a
+                  href="https://wa.me/5585998372445"
+                  target="_blank"
+                  style="display: flex; align-items: center; gap: 8px"
                 >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    style="opacity: 0.7; flex-shrink: 0"
+                  >
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                    />
+                  </svg>
+                  (85) 99837-2445
+                </a>
               </li>
               <li>
-                <a href="https://instagram.com/dra.camila_lobo" target="_blank"
-                  >@dra.camila_lobo</a
+                <a
+                  href="https://instagram.com/dra.camila_lobo"
+                  target="_blank"
+                  style="display: flex; align-items: center; gap: 8px"
                 >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    style="opacity: 0.7; flex-shrink: 0"
+                  >
+                    <path
+                      d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"
+                    />
+                  </svg>
+                  @dra.camila_lobo
+                </a>
               </li>
-              <li>Fortaleza, CE</li>
+              <li
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 8px;
+                  font-size: 13px;
+                  color: rgba(255, 255, 255, 0.5);
+                "
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  style="opacity: 0.7; flex-shrink: 0"
+                >
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                  />
+                </svg>
+                Av. Dr. Silas Munguba, 1140 - Parangaba - Fortaleza, CE
+              </li>
             </ul>
           </div>
         </div>
