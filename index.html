@@ -459,12 +459,17 @@
       .services-header .divider {
         margin: 0 auto 32px;
       }
-      .services-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+      .services-carousel-wrap {
+        position: relative;
+        overflow: hidden;
+      }
+      .services-track {
+        display: flex;
+        transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        will-change: transform;
       }
       .service-card {
+        flex-shrink: 0;
         background: var(--white);
         padding: 36px 30px;
         border-radius: 4px;
@@ -587,6 +592,83 @@
         line-height: 1.7;
         color: rgba(255, 255, 255, 0.5);
         margin: 0;
+      }
+
+      /* ===== CASOS CLÍNICOS ===== */
+      #casos {
+        padding: 100px 0;
+        background: var(--cream);
+      }
+      .casos-header {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto 64px;
+      }
+      .casos-header .divider {
+        margin: 0 auto 32px;
+      }
+      .casos-carousel-wrap {
+        position: relative;
+        overflow: hidden;
+      }
+      .casos-track {
+        display: flex;
+        transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        will-change: transform;
+      }
+      .caso-card {
+        flex-shrink: 0;
+        background: var(--white);
+        border-radius: 4px;
+        overflow: hidden;
+        border: 1px solid rgba(189, 178, 170, 0.2);
+      }
+      .caso-fotos {
+        display: flex;
+        flex-direction: column;
+      }
+      .caso-foto {
+        position: relative;
+      }
+      .caso-foto img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+      }
+      .caso-foto-label {
+        position: absolute;
+        bottom: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--white);
+        background: rgba(0, 0, 0, 0.45);
+        padding: 4px 10px;
+        border-radius: 2px;
+        white-space: nowrap;
+      }
+      .caso-info {
+        padding: 20px 20px 24px;
+      }
+      .caso-num {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--taupe-dark);
+        margin-bottom: 6px;
+      }
+      .caso-titulo {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--dark);
+        line-height: 1.3;
       }
 
       /* ===== DEPOIMENTOS ===== */
@@ -997,6 +1079,22 @@
         display: flex;
         gap: 16px;
       }
+      .credit-bar {
+        background: rgba(0, 0, 0, 0.25);
+        text-align: center;
+        padding: 10px 24px;
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.75);
+        letter-spacing: 1px;
+      }
+      .credit-bar a {
+        color: var(--white);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      .credit-bar a:hover {
+        color: var(--dark);
+      }
       .social-link {
         width: 36px;
         height: 36px;
@@ -1070,8 +1168,8 @@
           grid-template-columns: 1fr;
           gap: 48px;
         }
-        .services-grid {
-          grid-template-columns: 1fr;
+        .services-carousel-wrap {
+          overflow: hidden;
         }
         .footer-grid {
           grid-template-columns: 1fr;
@@ -1116,6 +1214,9 @@
         .sobre-img-accent {
           display: none;
         }
+        .casos-carousel-wrap {
+          overflow: hidden;
+        }
         #home::after {
           display: none; /* círculo decorativo que causava overflow */
         }
@@ -1142,11 +1243,6 @@
         }
         .faq-sticky {
           position: static;
-        }
-      }
-      @media (min-width: 901px) {
-        .services-grid {
-          grid-template-columns: repeat(3, 1fr);
         }
       }
       @media (max-width: 540px) {
@@ -1340,7 +1436,8 @@
             atenção individualizada para cada paciente.
           </p>
         </div>
-        <div class="services-grid">
+        <div class="services-carousel-wrap fade-in">
+          <div class="services-track" id="servicosTrack">
           <!-- Card 1 – DTM (destaque) -->
           <div
             class="service-card fade-in"
@@ -1492,7 +1589,17 @@
               individualizada.
             </p>
           </div>
-        </div>
+          </div><!-- /services-track -->
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="servicosPrev" aria-label="Anterior">
+              <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+            </button>
+            <div class="carousel-dots" id="servicosDots"></div>
+            <button class="carousel-btn" id="servicosNext" aria-label="Próximo">
+              <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+            </button>
+          </div>
+        </div><!-- /services-carousel-wrap -->
       </div>
     </section>
 
@@ -1563,6 +1670,147 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ===== CASOS CLÍNICOS ===== -->
+    <section id="casos">
+      <div class="container">
+        <div class="casos-header fade-in">
+          <span class="section-tag">Resultados reais</span>
+          <h2 class="section-title">Casos <em>clínicos</em></h2>
+          <div class="divider"></div>
+          <p
+            style="font-size: 15px; line-height: 1.9; color: var(--taupe-dark)"
+          >
+            Cada caso é único. Veja a transformação de alguns pacientes tratados
+            com dedicação e abordagem individualizada.
+          </p>
+        </div>
+        <div class="casos-carousel-wrap fade-in">
+          <div class="casos-track" id="casosTrack">
+            <div class="caso-card fade-in">
+              <div class="caso-fotos">
+                <div class="caso-foto">
+                  <img src="assets/ca1.jpeg" alt="Caso A – antes" />
+                  <span class="caso-foto-label">Antes</span>
+                </div>
+                <div class="caso-foto">
+                  <img src="assets/ca2.jpeg" alt="Caso A – depois" />
+                  <span class="caso-foto-label">Depois</span>
+                </div>
+              </div>
+              <div class="caso-info">
+                <p class="caso-num">Caso 01</p>
+                <p class="caso-titulo">Reabilitação e Equilíbrio Oclusal</p>
+              </div>
+            </div>
+
+            <div class="caso-card fade-in">
+              <div class="caso-fotos">
+                <div class="caso-foto">
+                  <img src="assets/cb1.jpeg" alt="Caso B – antes" />
+                  <span class="caso-foto-label">Antes</span>
+                </div>
+                <div class="caso-foto">
+                  <img src="assets/cb2.jpeg" alt="Caso B – depois" />
+                  <span class="caso-foto-label">Depois</span>
+                </div>
+              </div>
+              <div class="caso-info">
+                <p class="caso-num">Caso 02</p>
+                <p class="caso-titulo">Gengivoplastia - Estética Vermelha</p>
+              </div>
+            </div>
+
+            <div class="caso-card fade-in">
+              <div class="caso-fotos">
+                <div class="caso-foto">
+                  <img src="assets/cc1.jpeg" alt="Caso C – antes" />
+                  <span class="caso-foto-label">Antes</span>
+                </div>
+                <div class="caso-foto">
+                  <img src="assets/cc2.jpeg" alt="Caso C – depois" />
+                  <span class="caso-foto-label">Depois</span>
+                </div>
+              </div>
+              <div class="caso-info">
+                <p class="caso-num">Caso 03</p>
+                <p class="caso-titulo">
+                  Restauração Estética e Recontornos com Naturalidade
+                </p>
+              </div>
+            </div>
+
+            <div class="caso-card fade-in">
+              <div class="caso-fotos">
+                <div class="caso-foto">
+                  <img src="assets/cd1.jpeg" alt="Caso D – antes" />
+                  <span class="caso-foto-label">Antes</span>
+                </div>
+                <div class="caso-foto">
+                  <img src="assets/cd2.jpeg" alt="Caso D – depois" />
+                  <span class="caso-foto-label">Depois</span>
+                </div>
+              </div>
+              <div class="caso-info">
+                <p class="caso-num">Caso 04</p>
+                <p class="caso-titulo">Gengivoplastia - Estética Vermelha</p>
+              </div>
+            </div>
+
+            <div class="caso-card fade-in">
+              <div class="caso-fotos">
+                <div class="caso-foto">
+                  <img src="assets/ce1.jpeg" alt="Caso E – antes" />
+                  <span class="caso-foto-label">Antes</span>
+                </div>
+                <div class="caso-foto">
+                  <img src="assets/ce2.jpeg" alt="Caso E – depois" />
+                  <span class="caso-foto-label">Depois</span>
+                </div>
+              </div>
+              <div class="caso-info">
+                <p class="caso-num">Caso 05</p>
+                <p class="caso-titulo">
+                  Harmonização do Sorriso - Estética Vermelha e Estética Branca
+                </p>
+              </div>
+            </div>
+
+            <div class="caso-card fade-in">
+              <div class="caso-fotos">
+                <div class="caso-foto">
+                  <img src="assets/cf1.jpeg" alt="Caso F – antes" />
+                  <span class="caso-foto-label">Antes</span>
+                </div>
+                <div class="caso-foto">
+                  <img src="assets/cf2.jpeg" alt="Caso F – depois" />
+                  <span class="caso-foto-label">Depois</span>
+                </div>
+              </div>
+              <div class="caso-info">
+                <p class="caso-num">Caso 06</p>
+                <p class="caso-titulo">Clareamento Dental e Estética Branca</p>
+              </div>
+            </div>
+          </div>
+          <!-- /casos-track -->
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="casosPrev" aria-label="Anterior">
+              <svg viewBox="0 0 24 24">
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+              </svg>
+            </button>
+            <div class="carousel-dots" id="casosDots"></div>
+            <button class="carousel-btn" id="casosNext" aria-label="Próximo">
+              <svg viewBox="0 0 24 24">
+                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- /casos-carousel-wrap -->
       </div>
     </section>
 
@@ -2285,6 +2533,7 @@
         </div>
       </div>
     </footer>
+    <div class="credit-bar">Feito por <a href="https://github.com/jvholanda2" target="_blank">João Vitor</a></div>
 
     <!-- ===== WHATSAPP FLOAT ===== -->
     <a
@@ -2466,6 +2715,165 @@
         track.addEventListener("touchend", (e) => {
           const diff = startX - e.changedTouches[0].clientX;
           if (Math.abs(diff) > 50) goTo(diff > 0 ? current + 1 : current - 1);
+        });
+      })();
+
+      // ── Carrossel Serviços
+      (function () {
+        const wrap = document.querySelector(".services-carousel-wrap");
+        const track = document.getElementById("servicosTrack");
+        const prev = document.getElementById("servicosPrev");
+        const next = document.getElementById("servicosNext");
+        const dotsEl = document.getElementById("servicosDots");
+        if (!track) return;
+
+        const GAP = 20;
+        const cards = Array.from(track.children);
+        let current = 0;
+        let perView = 3;
+        let cardW = 0;
+
+        function getPerView() {
+          return window.innerWidth <= 700 ? 1 : window.innerWidth <= 1024 ? 2 : 3;
+        }
+
+        function setCardWidths() {
+          perView = getPerView();
+          const wrapW = wrap.clientWidth;
+          cardW = (wrapW - GAP * (perView - 1)) / perView;
+          cards.forEach((c) => {
+            c.style.width = cardW + "px";
+            c.style.minWidth = cardW + "px";
+            c.style.marginRight = GAP + "px";
+          });
+        }
+
+        function totalSlides() {
+          return Math.ceil(cards.length / perView);
+        }
+
+        function buildDots() {
+          dotsEl.innerHTML = "";
+          for (let i = 0; i < totalSlides(); i++) {
+            const d = document.createElement("button");
+            d.className = "carousel-dot" + (i === current ? " active" : "");
+            d.setAttribute("aria-label", "Slide " + (i + 1));
+            d.addEventListener("click", () => goTo(i));
+            dotsEl.appendChild(d);
+          }
+        }
+
+        function goTo(idx) {
+          const max = totalSlides() - 1;
+          current = Math.max(0, Math.min(idx, max));
+          track.style.transform = `translateX(-${current * perView * (cardW + GAP)}px)`;
+          dotsEl.querySelectorAll(".carousel-dot")
+            .forEach((d, i) => d.classList.toggle("active", i === current));
+        }
+
+        function init() {
+          setCardWidths();
+          if (current >= totalSlides()) current = 0;
+          buildDots();
+          goTo(current);
+        }
+
+        prev.addEventListener("click", () => goTo(current - 1));
+        next.addEventListener("click", () => goTo(current + 1));
+        window.addEventListener("resize", init);
+        init();
+
+        // Touch/swipe
+        let startX = 0;
+        track.addEventListener("touchstart", (e) => { startX = e.touches[0].clientX; }, { passive: true });
+        track.addEventListener("touchend", (e) => {
+          const diff = startX - e.changedTouches[0].clientX;
+          if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+        });
+      })();
+
+      // ── Carrossel Casos Clínicos
+      (function () {
+        const wrap = document.querySelector(".casos-carousel-wrap");
+        const track = document.getElementById("casosTrack");
+        const prev = document.getElementById("casosPrev");
+        const next = document.getElementById("casosNext");
+        const dotsEl = document.getElementById("casosDots");
+        if (!track) return;
+
+        const GAP = 24;
+        const cards = Array.from(track.children);
+        let current = 0;
+        let perView = 3;
+        let cardW = 0;
+
+        function getPerView() {
+          return window.innerWidth <= 700
+            ? 1
+            : window.innerWidth <= 1024
+              ? 2
+              : 3;
+        }
+
+        function setCardWidths() {
+          perView = getPerView();
+          const wrapW = wrap.clientWidth;
+          cardW = (wrapW - GAP * (perView - 1)) / perView;
+          cards.forEach((c) => {
+            c.style.width = cardW + "px";
+            c.style.minWidth = cardW + "px";
+            c.style.marginRight = GAP + "px";
+          });
+        }
+
+        function totalSlides() {
+          return Math.ceil(cards.length / perView);
+        }
+
+        function buildDots() {
+          dotsEl.innerHTML = "";
+          for (let i = 0; i < totalSlides(); i++) {
+            const d = document.createElement("button");
+            d.className = "carousel-dot" + (i === current ? " active" : "");
+            d.setAttribute("aria-label", "Slide " + (i + 1));
+            d.addEventListener("click", () => goTo(i));
+            dotsEl.appendChild(d);
+          }
+        }
+
+        function goTo(idx) {
+          const max = totalSlides() - 1;
+          current = Math.max(0, Math.min(idx, max));
+          track.style.transform = `translateX(-${current * perView * (cardW + GAP)}px)`;
+          dotsEl
+            .querySelectorAll(".carousel-dot")
+            .forEach((d, i) => d.classList.toggle("active", i === current));
+        }
+
+        function init() {
+          setCardWidths();
+          if (current >= totalSlides()) current = 0;
+          buildDots();
+          goTo(current);
+        }
+
+        prev.addEventListener("click", () => goTo(current - 1));
+        next.addEventListener("click", () => goTo(current + 1));
+        window.addEventListener("resize", init);
+        init();
+
+        // Touch/swipe
+        let startX = 0;
+        track.addEventListener(
+          "touchstart",
+          (e) => {
+            startX = e.touches[0].clientX;
+          },
+          { passive: true },
+        );
+        track.addEventListener("touchend", (e) => {
+          const diff = startX - e.changedTouches[0].clientX;
+          if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
         });
       })();
 
