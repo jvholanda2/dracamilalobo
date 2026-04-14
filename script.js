@@ -76,14 +76,10 @@ if (statsEl) counterObs.observe(statsEl);
   let current = 0;
   let perView = 3;
   let cardW = 0;
+  let cachedW = 0;
 
-  function getPerView() {
-    return window.innerWidth <= 700 ? 1 : window.innerWidth <= 1024 ? 2 : 3;
-  }
-
-  function setCardWidths() {
-    perView = getPerView();
-    const wrapW = wrap.clientWidth;
+  function setCardWidths(wrapW) {
+    perView = wrapW <= 500 ? 1 : wrapW <= 800 ? 2 : 3;
     cardW = (wrapW - GAP * (perView - 1)) / perView;
     cards.forEach((c) => {
       c.style.width = cardW + "px";
@@ -127,7 +123,8 @@ if (statsEl) counterObs.observe(statsEl);
   }
 
   function init() {
-    setCardWidths();
+    if (!cachedW) return;
+    setCardWidths(cachedW);
     if (current >= totalSlides()) current = 0;
     buildDots();
     goTo(current);
@@ -135,8 +132,10 @@ if (statsEl) counterObs.observe(statsEl);
 
   prev.addEventListener("click", () => goTo(current - 1));
   next.addEventListener("click", () => goTo(current + 1));
-  new ResizeObserver(() => requestAnimationFrame(init)).observe(wrap);
-  init();
+  new ResizeObserver((entries) => {
+    cachedW = entries[0].contentRect.width;
+    requestAnimationFrame(init);
+  }).observe(wrap);
 
   // Auto-play
   let timer = setInterval(
@@ -180,14 +179,10 @@ if (statsEl) counterObs.observe(statsEl);
   let current = 0;
   let perView = 3;
   let cardW = 0;
+  let cachedW = 0;
 
-  function getPerView() {
-    return window.innerWidth <= 700 ? 1 : window.innerWidth <= 1024 ? 2 : 3;
-  }
-
-  function setCardWidths() {
-    perView = getPerView();
-    const wrapW = wrap.clientWidth;
+  function setCardWidths(wrapW) {
+    perView = wrapW <= 500 ? 1 : wrapW <= 800 ? 2 : 3;
     cardW = (wrapW - GAP * (perView - 1)) / perView;
     cards.forEach((c) => {
       c.style.width = cardW + "px";
@@ -231,7 +226,8 @@ if (statsEl) counterObs.observe(statsEl);
   }
 
   function init() {
-    setCardWidths();
+    if (!cachedW) return;
+    setCardWidths(cachedW);
     if (current >= totalSlides()) current = 0;
     buildDots();
     goTo(current);
@@ -239,8 +235,10 @@ if (statsEl) counterObs.observe(statsEl);
 
   prev.addEventListener("click", () => goTo(current - 1));
   next.addEventListener("click", () => goTo(current + 1));
-  new ResizeObserver(() => requestAnimationFrame(init)).observe(wrap);
-  init();
+  new ResizeObserver((entries) => {
+    cachedW = entries[0].contentRect.width;
+    requestAnimationFrame(init);
+  }).observe(wrap);
 
   // Touch/swipe
   let startX = 0;
@@ -271,14 +269,10 @@ if (statsEl) counterObs.observe(statsEl);
   let current = 0;
   let perView = 3;
   let cardW = 0;
+  let cachedW = 0;
 
-  function getPerView() {
-    return window.innerWidth <= 700 ? 1 : window.innerWidth <= 1024 ? 2 : 3;
-  }
-
-  function setCardWidths() {
-    perView = getPerView();
-    const wrapW = wrap.clientWidth;
+  function setCardWidths(wrapW) {
+    perView = wrapW <= 500 ? 1 : wrapW <= 800 ? 2 : 3;
     cardW = (wrapW - GAP * (perView - 1)) / perView;
     cards.forEach((c) => {
       c.style.width = cardW + "px";
@@ -322,7 +316,8 @@ if (statsEl) counterObs.observe(statsEl);
   }
 
   function init() {
-    setCardWidths();
+    if (!cachedW) return;
+    setCardWidths(cachedW);
     if (current >= totalSlides()) current = 0;
     buildDots();
     goTo(current);
@@ -330,8 +325,10 @@ if (statsEl) counterObs.observe(statsEl);
 
   prev.addEventListener("click", () => goTo(current - 1));
   next.addEventListener("click", () => goTo(current + 1));
-  new ResizeObserver(() => requestAnimationFrame(init)).observe(wrap);
-  init();
+  new ResizeObserver((entries) => {
+    cachedW = entries[0].contentRect.width;
+    requestAnimationFrame(init);
+  }).observe(wrap);
 
   // Touch/swipe
   let startX = 0;
