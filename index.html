@@ -12,10 +12,21 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Carrega fonte de forma não-bloqueante -->
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <!-- Preload da imagem principal (LCP) -->
+    <link rel="preload" as="image" href="assets/foto-principal.webp" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -98,6 +109,9 @@
               <img
                 src="assets/foto-principal.webp"
                 alt="Dra. Camila Lôbo – Dentista em Fortaleza"
+                fetchpriority="high"
+                loading="eager"
+                decoding="sync"
                 onerror="
                   this.style.background = '#EDE8E4';
                   this.style.aspectRatio = '4/5';
@@ -126,6 +140,8 @@
               class="sobre-img-main"
               src="assets/foto-sobre.webp"
               alt="Dra. Camila Lôbo"
+              loading="lazy"
+              decoding="async"
               onerror="
                 this.style.background = '#EDE8E4';
                 this.style.aspectRatio = '3/4';
@@ -136,6 +152,8 @@
               class="sobre-img-accent"
               src="assets/foto-clinica.webp"
               alt="Clínica"
+              loading="lazy"
+              decoding="async"
               onerror="this.style.display = 'none'"
             />
           </div>
@@ -477,11 +495,11 @@
             <div class="caso-card fade-in">
               <div class="caso-fotos">
                 <div class="caso-foto">
-                  <img src="assets/ca1.webp" alt="Caso A – antes" />
+                  <img src="assets/ca1.webp" loading="lazy" decoding="async" alt="Caso A – antes" />
                   <span class="caso-foto-label">Antes</span>
                 </div>
                 <div class="caso-foto">
-                  <img src="assets/ca2.webp" alt="Caso A – depois" />
+                  <img src="assets/ca2.webp" loading="lazy" decoding="async" alt="Caso A – depois" />
                   <span class="caso-foto-label">Depois</span>
                 </div>
               </div>
@@ -494,11 +512,11 @@
             <div class="caso-card fade-in">
               <div class="caso-fotos">
                 <div class="caso-foto">
-                  <img src="assets/cb1.webp" alt="Caso B – antes" />
+                  <img src="assets/cb1.webp" loading="lazy" decoding="async" alt="Caso B – antes" />
                   <span class="caso-foto-label">Antes</span>
                 </div>
                 <div class="caso-foto">
-                  <img src="assets/cb2.webp" alt="Caso B – depois" />
+                  <img src="assets/cb2.webp" loading="lazy" decoding="async" alt="Caso B – depois" />
                   <span class="caso-foto-label">Depois</span>
                 </div>
               </div>
@@ -511,11 +529,11 @@
             <div class="caso-card fade-in">
               <div class="caso-fotos">
                 <div class="caso-foto">
-                  <img src="assets/cc1.webp" alt="Caso C – antes" />
+                  <img src="assets/cc1.webp" loading="lazy" decoding="async" alt="Caso C – antes" />
                   <span class="caso-foto-label">Antes</span>
                 </div>
                 <div class="caso-foto">
-                  <img src="assets/cc2.webp" alt="Caso C – depois" />
+                  <img src="assets/cc2.webp" loading="lazy" decoding="async" alt="Caso C – depois" />
                   <span class="caso-foto-label">Depois</span>
                 </div>
               </div>
@@ -530,11 +548,11 @@
             <div class="caso-card fade-in">
               <div class="caso-fotos">
                 <div class="caso-foto">
-                  <img src="assets/cd1.webp" alt="Caso D – antes" />
+                  <img src="assets/cd1.webp" loading="lazy" decoding="async" alt="Caso D – antes" />
                   <span class="caso-foto-label">Antes</span>
                 </div>
                 <div class="caso-foto">
-                  <img src="assets/cd2.webp" alt="Caso D – depois" />
+                  <img src="assets/cd2.webp" loading="lazy" decoding="async" alt="Caso D – depois" />
                   <span class="caso-foto-label">Depois</span>
                 </div>
               </div>
@@ -547,11 +565,11 @@
             <div class="caso-card fade-in">
               <div class="caso-fotos">
                 <div class="caso-foto">
-                  <img src="assets/ce1.webp" alt="Caso E – antes" />
+                  <img src="assets/ce1.webp" loading="lazy" decoding="async" alt="Caso E – antes" />
                   <span class="caso-foto-label">Antes</span>
                 </div>
                 <div class="caso-foto">
-                  <img src="assets/ce2.webp" alt="Caso E – depois" />
+                  <img src="assets/ce2.webp" loading="lazy" decoding="async" alt="Caso E – depois" />
                   <span class="caso-foto-label">Depois</span>
                 </div>
               </div>
@@ -566,11 +584,11 @@
             <div class="caso-card fade-in">
               <div class="caso-fotos">
                 <div class="caso-foto">
-                  <img src="assets/cf1.webp" alt="Caso F – antes" />
+                  <img src="assets/cf1.webp" loading="lazy" decoding="async" alt="Caso F – antes" />
                   <span class="caso-foto-label">Antes</span>
                 </div>
                 <div class="caso-foto">
-                  <img src="assets/cf2.webp" alt="Caso F – depois" />
+                  <img src="assets/cf2.webp" loading="lazy" decoding="async" alt="Caso F – depois" />
                   <span class="caso-foto-label">Depois</span>
                 </div>
               </div>
