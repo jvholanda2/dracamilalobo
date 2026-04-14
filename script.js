@@ -135,7 +135,7 @@ if (statsEl) counterObs.observe(statsEl);
 
   prev.addEventListener("click", () => goTo(current - 1));
   next.addEventListener("click", () => goTo(current + 1));
-  window.addEventListener("resize", init);
+  new ResizeObserver(() => requestAnimationFrame(init)).observe(wrap);
   init();
 
   // Auto-play
@@ -239,7 +239,7 @@ if (statsEl) counterObs.observe(statsEl);
 
   prev.addEventListener("click", () => goTo(current - 1));
   next.addEventListener("click", () => goTo(current + 1));
-  window.addEventListener("resize", init);
+  new ResizeObserver(() => requestAnimationFrame(init)).observe(wrap);
   init();
 
   // Touch/swipe
@@ -330,7 +330,7 @@ if (statsEl) counterObs.observe(statsEl);
 
   prev.addEventListener("click", () => goTo(current - 1));
   next.addEventListener("click", () => goTo(current + 1));
-  window.addEventListener("resize", init);
+  new ResizeObserver(() => requestAnimationFrame(init)).observe(wrap);
   init();
 
   // Touch/swipe
