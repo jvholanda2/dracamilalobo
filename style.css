@@ -641,6 +641,13 @@ nav {
   display: flex;
   flex-direction: column;
 }
+.caso-fotos--single .caso-foto {
+  flex: 1;
+}
+.caso-fotos--single .caso-foto img {
+  object-fit: cover;
+  height: 100%;
+}
 .caso-foto {
   position: relative;
 }
