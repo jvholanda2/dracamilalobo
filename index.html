@@ -10,9 +10,27 @@
     />
 
     <!-- Preload fontes -->
-    <link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/cormorant-normal-latin.woff2" />
-    <link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/cormorant-italic-latin.woff2" />
-    <link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/montserrat-normal-latin.woff2" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin
+      href="assets/fonts/cormorant-normal-latin.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin
+      href="assets/fonts/cormorant-italic-latin.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin
+      href="assets/fonts/montserrat-normal-latin.woff2"
+    />
     <!-- Preload da imagem principal (LCP) -->
     <link rel="preload" as="image" href="assets/images/foto-principal.webp" />
     <link rel="stylesheet" href="style.css" />
@@ -37,1185 +55,1302 @@
             >
           </li>
         </ul>
-        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Menu"
+          aria-expanded="false"
+        >
           <span></span><span></span><span></span>
         </button>
       </nav>
     </header>
 
     <main>
-    <!-- ===== HERO ===== -->
-    <section id="home">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-text fade-in-left">
-            <p class="hero-eyebrow">Dentista em Fortaleza</p>
-            <h1 class="hero-title">
-              Cuidado que <em>transforma</em> o seu sorriso
-            </h1>
-            <p class="hero-desc">
-              Sou a Dra. Camila Lôbo, possuo residência em Odontologia
-              Hospitalar pelo Hospital Geral de Fortaleza/CE, com ampla
-              experiência clínica no cuidado de pacientes com
-              <strong>dor orofacial e bruxismo</strong>. Ofereço tratamentos
-              individualizados com o objetivo de promover alívio, reequilíbrio
-              funcional e melhora significativa na sua qualidade de vida.
-            </p>
-            <div class="hero-actions">
-              <a
-                href="https://wa.me/5585998372445?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta!"
-                target="_blank"
-                class="btn btn-primary"
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
-                  <path
-                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
-                  />
-                </svg>
-                Agendar Consulta
-              </a>
-              <a href="#sobre" class="btn btn-outline">Conheça meu trabalho</a>
+      <!-- ===== HERO ===== -->
+      <section id="home">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-text fade-in-left">
+              <p class="hero-eyebrow">Dentista em Fortaleza</p>
+              <h1 class="hero-title">
+                Cuidado que <em>transforma</em> o seu sorriso
+              </h1>
+              <p class="hero-desc">
+                Sou a Dra. Camila Lôbo, possuo residência em Odontologia
+                Hospitalar pelo Hospital Geral de Fortaleza/CE, com ampla
+                experiência clínica no cuidado de pacientes com
+                <strong>dor orofacial e bruxismo</strong>. Ofereço tratamentos
+                individualizados com o objetivo de promover alívio, reequilíbrio
+                funcional e melhora significativa na sua qualidade de vida.
+              </p>
+              <div class="hero-actions">
+                <a
+                  href="https://wa.me/5585998372445?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta!"
+                  target="_blank"
+                  class="btn btn-primary"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                    />
+                  </svg>
+                  Agendar Consulta
+                </a>
+                <a href="#sobre" class="btn btn-outline"
+                  >Conheça meu trabalho</a
+                >
+              </div>
+              <div class="hero-stats">
+                <div>
+                  <div class="stat-number" data-count="4">0</div>
+                  <div class="stat-label">Anos de experiência</div>
+                </div>
+                <div>
+                  <div class="stat-number" data-count="3500">0</div>
+                  <div class="stat-label">Pacientes atendidos</div>
+                </div>
+                <div>
+                  <div class="stat-number" data-count="500">0</div>
+                  <div class="stat-label">casos em Dor Orofacial</div>
+                </div>
+              </div>
             </div>
-            <div class="hero-stats">
-              <div>
-                <div class="stat-number" data-count="4">0</div>
-                <div class="stat-label">Anos de experiência</div>
+
+            <div class="hero-image fade-in-right">
+              <div class="hero-image-frame">
+                <!-- Substituir pelo caminho real da foto -->
+                <img
+                  src="assets/images/foto-principal.webp"
+                  alt="Dra. Camila Lôbo – Dentista em Fortaleza"
+                  fetchpriority="high"
+                  loading="eager"
+                  decoding="sync"
+                  onerror="
+                    this.style.background = '#EDE8E4';
+                    this.style.aspectRatio = '4/5';
+                    this.removeAttribute('src');
+                  "
+                />
               </div>
-              <div>
-                <div class="stat-number" data-count="3500">0</div>
-                <div class="stat-label">Pacientes atendidos</div>
-              </div>
-              <div>
-                <div class="stat-number" data-count="500">0</div>
-                <div class="stat-label">casos em Dor Orofacial</div>
+              <div class="hero-badge">
+                <p>Residência em Odontologia Hospitalar</p>
+                <p style="font-size: 15px">
+                  Atuação em <strong>DTM / Bruxismo</strong>
+                </p>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="hero-image fade-in-right">
-            <div class="hero-image-frame">
-              <!-- Substituir pelo caminho real da foto -->
+      <!-- ===== SOBRE ===== -->
+      <section id="sobre">
+        <div class="container">
+          <div class="sobre-grid">
+            <div class="sobre-image-wrap fade-in-left">
+              <!-- Substituir pelo caminho real -->
               <img
-                src="assets/images/foto-principal.webp"
-                alt="Dra. Camila Lôbo – Dentista em Fortaleza"
-                fetchpriority="high"
-                loading="eager"
-                decoding="sync"
+                class="sobre-img-main"
+                src="assets/images/foto-sobre.webp"
+                alt="Dra. Camila Lôbo"
+                loading="lazy"
+                decoding="async"
                 onerror="
                   this.style.background = '#EDE8E4';
-                  this.style.aspectRatio = '4/5';
+                  this.style.aspectRatio = '3/4';
                   this.removeAttribute('src');
                 "
               />
+              <img
+                class="sobre-img-accent"
+                src="assets/images/foto-clinica.webp"
+                alt="Clínica"
+                loading="lazy"
+                decoding="async"
+                onerror="this.style.display = 'none'"
+              />
             </div>
-            <div class="hero-badge">
-              <p>Residência em Odontologia Hospitalar</p>
-              <p style="font-size: 15px">
-                Atuação em <strong>DTM / Bruxismo</strong>
+            <div class="sobre-text fade-in-right">
+              <span class="section-tag">Sobre mim</span>
+              <h2 class="section-title">
+                Dentista em Fortaleza<br /><em>Odontologia Hospitalar</em>
+              </h2>
+              <div class="divider"></div>
+              <p style="text-align: justify">
+                Meu compromisso é oferecer uma odontologia humanizada, que vai
+                além do sorriso e cuida da sua saúde de forma integral. Sou
+                apaixonada pelo que faço e fico feliz em cada paciente que
+                transforma sua vida através do tratamento.
               </p>
+              <p style="text-align: justify">
+                Com experiência no atendimento de Disfunção Temporomandibular
+                (DTM), ajudo pacientes que sofrem com dores de cabeça,
+                mandíbula, pescoço e outros sintomas relacionados à articulação
+                temporomandibular — promovendo alívio da dor, melhora funcional
+                e mais qualidade de vida.
+              </p>
+              <p style="text-align: justify">
+                Além da atuação em DTM, também ofereço um cuidado odontológico
+                completo e individualizado. Atendo pacientes com necessidades
+                especiais com acolhimento e sensibilidade, realizo procedimentos
+                de estética dentária com foco em naturalidade, acompanho o
+                público infantil com atenção e leveza, e executo cirurgias
+                odontológicas com segurança e precisão. Tudo com um olhar
+                cuidadoso voltado ao seu bem-estar e qualidade de vida.
+              </p>
+              <ul class="credential-list">
+                <li>
+                  Graduada em Odontologia pela Universidade Federal do Ceará
+                  (UFC)
+                </li>
+                <li>
+                  Residência em Odontologia Hospitalar - Hospital Geral de
+                  Fortaleza (HGF)
+                </li>
+                <li>
+                  Aperfeiçoamento Estética Dentária e Gengival - UP Dentistry
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ===== SOBRE ===== -->
-    <section id="sobre">
-      <div class="container">
-        <div class="sobre-grid">
-          <div class="sobre-image-wrap fade-in-left">
-            <!-- Substituir pelo caminho real -->
-            <img
-              class="sobre-img-main"
-              src="assets/images/foto-sobre.webp"
-              alt="Dra. Camila Lôbo"
-              loading="lazy"
-              decoding="async"
-              onerror="
-                this.style.background = '#EDE8E4';
-                this.style.aspectRatio = '3/4';
-                this.removeAttribute('src');
+      <!-- ===== SERVIÇOS ===== -->
+      <section id="servicos">
+        <div class="container">
+          <div class="services-header fade-in">
+            <span class="section-tag">O que ofereço</span>
+            <h2 class="section-title">Meus <em>serviços</em></h2>
+            <div class="divider"></div>
+            <p style="font-size: 15px; color: #777; line-height: 1.8">
+              Tratamentos odontológicos realizados com cuidado, tecnologia e
+              atenção individualizada para cada paciente.
+            </p>
+          </div>
+          <div class="services-carousel-wrap fade-in">
+            <div class="services-track" id="servicosTrack">
+              <!-- Card 1 – DTM (destaque) -->
+              <div
+                class="service-card fade-in"
+                style="
+                  border-top: 3px solid var(--taupe);
+                  transition-delay: 0.1s;
+                "
+              >
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                    />
+                  </svg>
+                </div>
+                <h3>DTM – Disfunção Temporomandibular</h3>
+                <p>
+                  Diagnóstico e tratamento especializado para dores na
+                  mandíbula, cabeça, pescoço e articulação temporomandibular.
+                  Reabilitação completa para sua qualidade de vida.
+                </p>
+                <span class="service-placeholder">Atuação principal</span>
+              </div>
+
+              <div class="service-card fade-in" style="transition-delay: 0.2s">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"
+                    />
+                  </svg>
+                </div>
+                <h3>Bruxismo</h3>
+                <p>
+                  Diagnóstico e tratamento do hábito de ranger ou apertar os
+                  dentes, aliviando dores musculares, protegendo os dentes e
+                  melhorando a qualidade do sono e do bem-estar.
+                </p>
+              </div>
+
+              <!-- Cards de serviço -->
+              <div class="service-card fade-in" style="transition-delay: 0.3s">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" fill="var(--taupe-dark)">
+                    <path
+                      d="M3.75 13.5L14.25 2.25L12 10.5H20.25L9.75 21.75L12 13.5H3.75Z"
+                    />
+                  </svg>
+                </div>
+                <h3>Laserterapia</h3>
+                <p>
+                  Tecnologia que auxilia no alívio da dor, acelera a
+                  cicatrização e reduz inflamações. Um recurso moderno, seguro e
+                  confortável, que potencializa os resultados do seu tratamento.
+                </p>
+              </div>
+
+              <div class="service-card fade-in" style="transition-delay: 0.3s">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5zM19 15l-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25L19 15z"
+                    />
+                  </svg>
+                </div>
+                <h3>Estética Dentária</h3>
+                <p>
+                  Procedimentos voltados à harmonia do sorriso, com resultados
+                  naturais e personalizados. Realce da sua estética com
+                  equilíbrio, sutileza e segurança.
+                </p>
+              </div>
+
+              <div class="service-card fade-in" style="transition-delay: 0.1s">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"
+                    />
+                  </svg>
+                </div>
+                <h3>Estética Gengival</h3>
+                <p>
+                  Correções e contornos gengivais que valorizam o sorriso e
+                  proporcionam mais harmonia facial. Cuidado preciso para um
+                  resultado natural e saudável.
+                </p>
+              </div>
+
+              <div class="service-card fade-in" style="transition-delay: 0.2s">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"
+                    />
+                  </svg>
+                </div>
+                <h3>Clínica Geral</h3>
+                <p>
+                  Atendimento completo para prevenção, diagnóstico e tratamento
+                  da saúde bucal. Cuidado contínuo para manter seu sorriso
+                  saudável em todas as fases.
+                </p>
+              </div>
+
+              <div class="service-card fade-in" style="transition-delay: 0.3s">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"
+                    />
+                  </svg>
+                </div>
+                <h3>Odontopediatria</h3>
+                <p>
+                  Atenção especializada para crianças, com foco em prevenção,
+                  conforto e experiências positivas desde os primeiros cuidados
+                  com a saúde bucal.
+                </p>
+              </div>
+
+              <div class="service-card fade-in" style="transition-delay: 0.1s">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M19.07 4.93C17.19 3.06 14.7 2 12 2s-5.19 1.06-7.07 2.93C3.06 6.81 2 9.3 2 12s1.06 5.19 2.93 7.07C6.81 20.94 9.3 22 12 22s5.19-1.06 7.07-2.93C20.94 17.19 22 14.7 22 12s-1.06-5.19-2.93-7.07zm-1.41 1.41C19.1 7.79 20 9.79 20 12H4c0-2.21.9-4.21 2.34-5.66L17.66 6.34zM6.34 17.66C4.9 16.21 4 14.21 4 12h16c0 2.21-.9 4.21-2.34 5.66L6.34 17.66z"
+                    />
+                  </svg>
+                </div>
+                <h3>Cirurgia Odontológica</h3>
+                <p>
+                  Procedimentos realizados com técnica, segurança e planejamento
+                  individualizado. Foco no bem-estar e em uma recuperação
+                  tranquila.
+                </p>
+              </div>
+
+              <div class="service-card fade-in" style="transition-delay: 0.2s">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"
+                    />
+                  </svg>
+                </div>
+                <h3>Pacientes com Necessidades Especiais</h3>
+                <p>
+                  Atendimento odontológico adaptado para pessoas que necessitam
+                  de um cuidado diferenciado, seja por condições físicas,
+                  sensoriais, emocionais ou sistêmicas. Cada consulta é
+                  conduzida com acolhimento, paciência e atenção aos detalhes,
+                  garantindo conforto, segurança e uma experiência tranquila.
+                </p>
+              </div>
+
+              <div class="service-card fade-in" style="transition-delay: 0.3s">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                  </svg>
+                </div>
+                <h3>Atendimento Homecare</h3>
+                <p>
+                  Atendimento odontológico no conforto do seu lar, com cuidado
+                  humanizado e adaptado às suas necessidades. Ideal para
+                  pacientes que necessitam de mais comodidade, seguranca, e
+                  atenção individualizada.
+                </p>
+              </div>
+            </div>
+            <!-- /services-track -->
+            <div class="carousel-controls">
+              <button
+                class="carousel-btn"
+                id="servicosPrev"
+                aria-label="Anterior"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+              </button>
+              <div class="carousel-dots" id="servicosDots"></div>
+              <button
+                class="carousel-btn"
+                id="servicosNext"
+                aria-label="Próximo"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- /services-carousel-wrap -->
+        </div>
+      </section>
+
+      <!-- ===== DIFERENCIAIS ===== -->
+      <section id="diferenciais">
+        <div class="container">
+          <div class="diff-grid">
+            <div class="diff-text fade-in-left">
+              <span class="section-tag" style="color: var(--taupe)"
+                >Por que me escolher</span
+              >
+              <h2 class="section-title">Meus <em>diferenciais</em></h2>
+              <div class="divider"></div>
+              <p>
+                Ofereço um atendimento completo, humanizado e especializado para
+                que cada paciente se sinta acolhido e obtenha os melhores
+                resultados.
+              </p>
+              <a
+                href="https://wa.me/5585998372445?text=Olá%2C%20quero%20saber%20mais%20sobre%20os%20serviços!"
+                target="_blank"
+                class="btn btn-outline"
+                style="color: var(--taupe); border-color: var(--taupe)"
+              >
+                Fale comigo
+              </a>
+            </div>
+            <div class="diff-items fade-in-right">
+              <div class="diff-item">
+                <div class="diff-num">01</div>
+                <div>
+                  <h3>Foco em DTM e Dor Orofacial</h3>
+                  <p>
+                    Atuação direcionada ao diagnóstico e manejo das dores na
+                    face e mandíbula, com abordagem precisa e individualizada.
+                  </p>
+                </div>
+              </div>
+              <div class="diff-item">
+                <div class="diff-num">02</div>
+                <div>
+                  <h3>Atendimento Personalizado</h3>
+                  <p>
+                    Cada paciente é atendido de forma única, com escuta atenta,
+                    planejamento cuidadoso e respeito às suas necessidades.
+                  </p>
+                </div>
+              </div>
+              <div class="diff-item">
+                <div class="diff-num">03</div>
+                <div>
+                  <h3>Abordagem Atualizada</h3>
+                  <p>
+                    Condutas baseadas em conhecimento atual e técnicas modernas,
+                    proporcionando mais segurança, conforto e previsibilidade.
+                  </p>
+                </div>
+              </div>
+              <div class="diff-item">
+                <div class="diff-num">04</div>
+                <div>
+                  <h3>Experiência e Cuidado Integral</h3>
+                  <p>
+                    Um olhar completo sobre sua saúde, integrando função,
+                    estética e bem-estar para resultados que vão além do
+                    tratamento.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CASOS CLÍNICOS ===== -->
+      <section id="casos">
+        <div class="container">
+          <div class="casos-header fade-in">
+            <span class="section-tag">Resultados reais</span>
+            <h2 class="section-title">Casos <em>clínicos</em></h2>
+            <div class="divider"></div>
+            <p
+              style="
+                font-size: 15px;
+                line-height: 1.9;
+                color: var(--taupe-dark);
               "
-            />
-            <img
-              class="sobre-img-accent"
-              src="assets/images/foto-clinica.webp"
-              alt="Clínica"
-              loading="lazy"
-              decoding="async"
-              onerror="this.style.display = 'none'"
-            />
+            >
+              Cada caso é único. Veja a transformação de alguns pacientes
+              tratados com dedicação e abordagem individualizada.
+            </p>
           </div>
-          <div class="sobre-text fade-in-right">
-            <span class="section-tag">Sobre mim</span>
-            <h2 class="section-title">
-              Dentista em Fortaleza<br /><em>Odontologia Hospitalar</em>
-            </h2>
+          <div class="casos-carousel-wrap fade-in">
+            <div class="casos-track" id="casosTrack">
+              <div class="caso-card fade-in">
+                <div class="caso-fotos caso-fotos--single">
+                  <div class="caso-foto">
+                    <img
+                      src="assets/images/ca1.webp"
+                      loading="lazy"
+                      decoding="async"
+                      alt="Caso 01"
+                    />
+                  </div>
+                </div>
+                <div class="caso-info">
+                  <p class="caso-num">Caso 01</p>
+                  <p class="caso-titulo">DTM - Laserterapia</p>
+                </div>
+              </div>
+
+              <div class="caso-card fade-in">
+                <div class="caso-fotos caso-fotos--single">
+                  <div class="caso-foto">
+                    <img
+                      src="assets/images/cb1.webp"
+                      loading="lazy"
+                      decoding="async"
+                      alt="Caso 02"
+                    />
+                  </div>
+                </div>
+                <div class="caso-info">
+                  <p class="caso-num">Caso 02</p>
+                  <p class="caso-titulo">DTM - Liberação Miofacial</p>
+                </div>
+              </div>
+
+              <div class="caso-card fade-in">
+                <div class="caso-fotos">
+                  <div class="caso-foto">
+                    <img
+                      src="assets/images/cd1.webp"
+                      loading="lazy"
+                      decoding="async"
+                      alt="Caso C – antes"
+                    />
+                    <span class="caso-foto-label">Antes</span>
+                  </div>
+                  <div class="caso-foto">
+                    <img
+                      src="assets/images/cd2.webp"
+                      loading="lazy"
+                      decoding="async"
+                      alt="Caso C – depois"
+                    />
+                    <span class="caso-foto-label">Depois</span>
+                  </div>
+                </div>
+                <div class="caso-info">
+                  <p class="caso-num">Caso 03</p>
+                  <p class="caso-titulo">Reabilitação e Equilíbrio Oclusal</p>
+                </div>
+              </div>
+
+              <div class="caso-card fade-in">
+                <div class="caso-fotos">
+                  <div class="caso-foto">
+                    <img
+                      src="assets/images/ce1.webp"
+                      loading="lazy"
+                      decoding="async"
+                      alt="Caso D – antes"
+                    />
+                    <span class="caso-foto-label">Antes</span>
+                  </div>
+                  <div class="caso-foto">
+                    <img
+                      src="assets/images/ce2.webp"
+                      loading="lazy"
+                      decoding="async"
+                      alt="Caso D – depois"
+                    />
+                    <span class="caso-foto-label">Depois</span>
+                  </div>
+                </div>
+                <div class="caso-info">
+                  <p class="caso-num">Caso 04</p>
+                  <p class="caso-titulo">Gengivoplastia - Estética Vermelha</p>
+                </div>
+              </div>
+
+              <div class="caso-card fade-in">
+                <div class="caso-fotos">
+                  <div class="caso-foto">
+                    <img
+                      src="assets/images/cf1.webp"
+                      loading="lazy"
+                      decoding="async"
+                      alt="Caso E – antes"
+                    />
+                    <span class="caso-foto-label">Antes</span>
+                  </div>
+                  <div class="caso-foto">
+                    <img
+                      src="assets/images/cf2.webp"
+                      loading="lazy"
+                      decoding="async"
+                      alt="Caso E – depois"
+                    />
+                    <span class="caso-foto-label">Depois</span>
+                  </div>
+                </div>
+                <div class="caso-info">
+                  <p class="caso-num">Caso 05</p>
+                  <p class="caso-titulo">
+                    Restauração Estética e Recontornos com Naturalidade
+                  </p>
+                </div>
+              </div>
+
+              <div class="caso-card fade-in">
+                <div class="caso-fotos">
+                  <div class="caso-foto">
+                    <img
+                      src="assets/images/ci1.webp"
+                      loading="lazy"
+                      decoding="async"
+                      alt="Caso F – antes"
+                    />
+                    <span class="caso-foto-label">Antes</span>
+                  </div>
+                  <div class="caso-foto">
+                    <img
+                      src="assets/images/ci2.webp"
+                      loading="lazy"
+                      decoding="async"
+                      alt="Caso F – depois"
+                    />
+                    <span class="caso-foto-label">Depois</span>
+                  </div>
+                </div>
+                <div class="caso-info">
+                  <p class="caso-num">Caso 06</p>
+                  <p class="caso-titulo">Clareamento Dental e Estética Branca</p>
+                </div>
+              </div>
+
+              <div class="caso-card fade-in">
+                <div class="caso-fotos">
+                  <div class="caso-foto">
+                    <img
+                      src="assets/images/ch1.webp"
+                      loading="lazy"
+                      decoding="async"
+                      alt="Caso G – antes"
+                    />
+                    <span class="caso-foto-label">Antes</span>
+                  </div>
+                  <div class="caso-foto">
+                    <img
+                      src="assets/images/ch2.webp"
+                      loading="lazy"
+                      decoding="async"
+                      alt="Caso G – depois"
+                    />
+                    <span class="caso-foto-label">Depois</span>
+                  </div>
+                </div>
+                <div class="caso-info">
+                  <p class="caso-num">Caso 07</p>
+                  <p class="caso-titulo">
+                    Harmonização do Sorriso - Estética Vermelha e Estética
+                    Branca
+                  </p>
+                </div>
+              </div>
+
+              <div class="caso-card fade-in">
+                <div class="caso-fotos">
+                  <div class="caso-foto">
+                    <img
+                      src="assets/images/cg1.webp"
+                      loading="lazy"
+                      decoding="async"
+                      alt="Caso H – antes"
+                    />
+                    <span class="caso-foto-label">Antes</span>
+                  </div>
+                  <div class="caso-foto">
+                    <img
+                      src="assets/images/cg2.webp"
+                      loading="lazy"
+                      decoding="async"
+                      alt="Caso H – depois"
+                    />
+                    <span class="caso-foto-label">Depois</span>
+                  </div>
+                </div>
+                <div class="caso-info">
+                  <p class="caso-num">Caso 08</p>
+                  <p class="caso-titulo">Gengivoplastia - Estética Vermelha</p>
+                </div>
+              </div>
+            </div>
+            <!-- /casos-track -->
+            <div class="carousel-controls">
+              <button class="carousel-btn" id="casosPrev" aria-label="Anterior">
+                <svg viewBox="0 0 24 24">
+                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+              </button>
+              <div class="carousel-dots" id="casosDots"></div>
+              <button class="carousel-btn" id="casosNext" aria-label="Próximo">
+                <svg viewBox="0 0 24 24">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- /casos-carousel-wrap -->
+        </div>
+      </section>
+
+      <!-- ===== DEPOIMENTOS ===== -->
+      <section id="depoimentos">
+        <div class="container">
+          <div class="depo-header fade-in">
+            <span class="section-tag">Depoimentos</span>
+            <h2 class="section-title">O que meus <em>pacientes</em> dizem</h2>
             <div class="divider"></div>
-            <p style="text-align: justify">
-              Meu compromisso é oferecer uma odontologia humanizada, que vai
-              além do sorriso e cuida da sua saúde de forma integral. Sou
-              apaixonada pelo que faço e fico feliz em cada paciente que
-              transforma sua vida através do tratamento.
-            </p>
-            <p style="text-align: justify">
-              Com experiência no atendimento de Disfunção Temporomandibular
-              (DTM), ajudo pacientes que sofrem com dores de cabeça, mandíbula,
-              pescoço e outros sintomas relacionados à articulação
-              temporomandibular — promovendo alívio da dor, melhora funcional e
-              mais qualidade de vida.
-            </p>
-            <p style="text-align: justify">
-              Além da atuação em DTM, também ofereço um cuidado odontológico
-              completo e individualizado. Atendo pacientes com necessidades
-              especiais com acolhimento e sensibilidade, realizo procedimentos
-              de estética dentária com foco em naturalidade, acompanho o público
-              infantil com atenção e leveza, e executo cirurgias odontológicas
-              com segurança e precisão. Tudo com um olhar cuidadoso voltado ao
-              seu bem-estar e qualidade de vida.
-            </p>
-            <ul class="credential-list">
-              <li>
-                Graduada em Odontologia pela Universidade Federal do Ceará (UFC)
-              </li>
-              <li>
-                Residência em Odontologia Hospitalar - Hospital Geral de
-                Fortaleza (HGF)
-              </li>
-              <li>
-                Aperfeiçoamento Estética Dentária e Gengival - UP Dentistry
-              </li>
-            </ul>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== SERVIÇOS ===== -->
-    <section id="servicos">
-      <div class="container">
-        <div class="services-header fade-in">
-          <span class="section-tag">O que ofereço</span>
-          <h2 class="section-title">Meus <em>serviços</em></h2>
-          <div class="divider"></div>
-          <p style="font-size: 15px; color: #777; line-height: 1.8">
-            Tratamentos odontológicos realizados com cuidado, tecnologia e
-            atenção individualizada para cada paciente.
-          </p>
-        </div>
-        <div class="services-carousel-wrap fade-in">
-          <div class="services-track" id="servicosTrack">
-            <!-- Card 1 – DTM (destaque) -->
-            <div
-              class="service-card fade-in"
-              style="border-top: 3px solid var(--taupe); transition-delay: 0.1s"
-            >
-              <div class="service-icon">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
-                  />
-                </svg>
+          <div class="carousel-wrap fade-in">
+            <div class="carousel-track" id="depoTrack">
+              <div class="depo-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                  Ótimo atendimento! Muito tranquila, muito segura, teve muita
+                  paciência, me explicou tudo direitinho. Recomendo sem medo
+                  algum.
+                </blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar">J</div>
+                  <div>
+                    <div class="author-name">João Vitor</div>
+                    <div class="author-role">Local Guide · Paciente</div>
+                  </div>
+                </div>
               </div>
-              <h3>DTM – Disfunção Temporomandibular</h3>
-              <p>
-                Diagnóstico e tratamento especializado para dores na mandíbula,
-                cabeça, pescoço e articulação temporomandibular. Reabilitação
-                completa para sua qualidade de vida.
-              </p>
-              <span class="service-placeholder">Atuação principal</span>
+
+              <div class="depo-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                  A Dra. Camila é simplesmente incrível! Cheguei no consultório
+                  cheio de dúvidas e dores, e ela me atendeu super bem, com
+                  muita atenção. O tratamento deu super certo e finalmente
+                  fiquei livre das dores! Além de ótima profissional, é super
+                  gente boa!
+                </blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar">D</div>
+                  <div>
+                    <div class="author-name">Danilo Pereira</div>
+                    <div class="author-role">Paciente</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="depo-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                  A Dra. Camila foi simplesmente maravilhosa! Estava com um
+                  problema que já vinha me incomodando há tempos, e ela soube
+                  exatamente como tratar com competência e sensibilidade. Seu
+                  atendimento é humanizado, cuidadoso e extremamente
+                  profissional. Saí do consultório aliviado e confiante.
+                  Recomendo demais!
+                </blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar">M</div>
+                  <div>
+                    <div class="author-name">Matheus Jardilino</div>
+                    <div class="author-role">Local Guide · Paciente</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="depo-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                  Tive uma excelente experiência com a Dra. Camila. Desde o
+                  primeiro atendimento, ela foi extremamente atenciosa,
+                  profissional e cuidadosa. Eu estava com um problema que já me
+                  incomodava há algum tempo, e ela rapidamente identificou a
+                  causa.
+                </blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar">D</div>
+                  <div>
+                    <div class="author-name">Débora Vitória</div>
+                    <div class="author-role">Paciente</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="depo-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                  Senti uma diferença enorme após ser tratado pela Dra. Camila.
+                  Ela me atendeu com paciência, escutou minhas queixas e propôs
+                  um plano ótimo que realmente funcionou. Muito feliz com o
+                  resultado.
+                </blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar">L</div>
+                  <div>
+                    <div class="author-name">Luis Carlos Vieira Queiroz</div>
+                    <div class="author-role">Paciente</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="depo-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                  Tive a grata satisfação de ser atendida pela Dra. Camila,
+                  cirurgiã-dentista especialista em DTM/ATM e laserterapia, cuja
+                  conduta profissional e excelência técnica merecem ser
+                  destacadas.
+                </blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar">R</div>
+                  <div>
+                    <div class="author-name">Rute Oliveira</div>
+                    <div class="author-role">Paciente</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="depo-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                  Excelente atendimento! A Dra. Camila demonstrou total domínio
+                  na área e foi super atenciosa do início ao fim. O tratamento
+                  foi eficaz e já senti a melhora logo nos primeiros dias. A
+                  clínica é organizada e o ambiente, muito agradável. Só tenho
+                  elogios!
+                </blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar">E</div>
+                  <div>
+                    <div class="author-name">Eduardo Forte</div>
+                    <div class="author-role">Paciente</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="depo-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                  Fiquei muito satisfeita com o atendimento da Dra. Camila. Ela
+                  foi muito clara nas explicações, me passou segurança desde o
+                  início e, o mais importante, resolveu meu problema com
+                  eficiência. Além de ser uma excelente dentista, é muito
+                  simpática.
+                </blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar">C</div>
+                  <div>
+                    <div class="author-name">Catarina Sousa</div>
+                    <div class="author-role">Paciente</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="depo-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                  Fui atendido pela Dra. Camila e só tenho elogios! Ela foi
+                  muito atenciosa, explicou cada etapa do tratamento com clareza
+                  e me deixou totalmente tranquilo. É raro encontrar alguém tão
+                  dedicada e cuidadosa.
+                </blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar">F</div>
+                  <div>
+                    <div class="author-name">Felipe Timbó</div>
+                    <div class="author-role">Paciente</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="depo-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                  Finalizei hoje o meu tratamento com a Dra. Camila, esperei
+                  finalizar para poder avaliar. Quero deixar registrado minha
+                  gratidão à profissional, por toda sua atenção e dedicação.
+                </blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar">R</div>
+                  <div>
+                    <div class="author-name">Robinson Andres</div>
+                    <div class="author-role">Paciente</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="depo-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                  A Dra é incrível, atendeu a mim e aos meus problemas com
+                  excelência, impecável. Me sinto muito bem cuidada pelas mãos
+                  dela e o processo tem vindo com resultados cada vez melhores,
+                  realmente perfeito.
+                </blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar">L</div>
+                  <div>
+                    <div class="author-name">Lara Isabela Souza</div>
+                    <div class="author-role">Paciente</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="depo-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                  Dra Camila é muito atenciosa e prestativa. Me deu atenção e
+                  todo cuidado em um momento de crise. Não senti mais dores,
+                  graças a Deus e os cuidados dela.
+                </blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar">J</div>
+                  <div>
+                    <div class="author-name">Jéssica Gomes</div>
+                    <div class="author-role">Paciente</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="depo-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                  Foi o melhor atendimento que já tive. Venho buscando há muito
+                  tempo um atendimento que realmente resolvesse meu problema,
+                  mas a Dra Camila foi um achado!
+                </blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar">R</div>
+                  <div>
+                    <div class="author-name">Rubens Andres</div>
+                    <div class="author-role">Paciente</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="depo-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                  Excelente profissional! Atenciosa, paciente e muito
+                  competente. Tive um atendimento confortável e recomendo!
+                </blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar">L</div>
+                  <div>
+                    <div class="author-name">Luanda Ashley</div>
+                    <div class="author-role">Paciente</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="depo-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                  Atenciosa e cuidadosa. Estou em tratamento com ela ainda, mas
+                  estou sentindo a melhora gradativa, principalmente depois do
+                  laser. Ótima profissional, recomendo.
+                </blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar">L</div>
+                  <div>
+                    <div class="author-name">Luan Ribeiro</div>
+                    <div class="author-role">Paciente</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="depo-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                  Agendei uma consulta com a doutora, muito atenciosa, tirou
+                  todas as minhas dúvidas e trouxe todas as recomendações. Foi
+                  muito bom. Recomendo.
+                </blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar">M</div>
+                  <div>
+                    <div class="author-name">Marcelle Tabosa</div>
+                    <div class="author-role">Paciente</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="depo-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                  Melhor dentista que fui na minha vida! Muito profissional,
+                  sanou todas as minhas dúvidas e ainda me tranquilizou com o
+                  processo. Recomendo demais!
+                </blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar">G</div>
+                  <div>
+                    <div class="author-name">Gabriel Dias</div>
+                    <div class="author-role">Paciente</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="depo-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                  Tenho bruxismo e estou muito satisfeito com o acompanhamento
+                  que venho tendo com a Dra. Camila.
+                </blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar">G</div>
+                  <div>
+                    <div class="author-name">Gabriel Cardoso</div>
+                    <div class="author-role">Local Guide · Paciente</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="depo-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                  Excelente profissional, atenciosa e paciente, super indico!
+                </blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar">G</div>
+                  <div>
+                    <div class="author-name">Giovanna Silva</div>
+                    <div class="author-role">Paciente</div>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div class="service-card fade-in" style="transition-delay: 0.2s">
-              <div class="service-icon">
+            <!-- controles -->
+            <div class="carousel-controls">
+              <button class="carousel-btn" id="depoPrev" aria-label="Anterior">
                 <svg viewBox="0 0 24 24">
-                  <path
-                    d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"
-                  />
+                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
                 </svg>
-              </div>
-              <h3>Bruxismo</h3>
-              <p>
-                Diagnóstico e tratamento do hábito de ranger ou apertar os
-                dentes, aliviando dores musculares, protegendo os dentes e
-                melhorando a qualidade do sono e do bem-estar.
-              </p>
-            </div>
-
-            <!-- Cards de serviço -->
-            <div class="service-card fade-in" style="transition-delay: 0.3s">
-              <div class="service-icon">
-                <svg viewBox="0 0 24 24" fill="var(--taupe-dark)">
-                  <path
-                    d="M3.75 13.5L14.25 2.25L12 10.5H20.25L9.75 21.75L12 13.5H3.75Z"
-                  />
-                </svg>
-              </div>
-              <h3>Laserterapia</h3>
-              <p>
-                Tecnologia que auxilia no alívio da dor, acelera a cicatrização
-                e reduz inflamações. Um recurso moderno, seguro e confortável,
-                que potencializa os resultados do seu tratamento.
-              </p>
-            </div>
-
-            <div class="service-card fade-in" style="transition-delay: 0.3s">
-              <div class="service-icon">
+              </button>
+              <div class="carousel-dots" id="depoDots"></div>
+              <button class="carousel-btn" id="depoNext" aria-label="Próximo">
                 <svg viewBox="0 0 24 24">
-                  <path
-                    d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5zM19 15l-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25L19 15z"
-                  />
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
                 </svg>
-              </div>
-              <h3>Estética Dentária</h3>
-              <p>
-                Procedimentos voltados à harmonia do sorriso, com resultados
-                naturais e personalizados. Realce da sua estética com
-                equilíbrio, sutileza e segurança.
-              </p>
-            </div>
-
-            <div class="service-card fade-in" style="transition-delay: 0.1s">
-              <div class="service-icon">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"
-                  />
-                </svg>
-              </div>
-              <h3>Estética Gengival</h3>
-              <p>
-                Correções e contornos gengivais que valorizam o sorriso e
-                proporcionam mais harmonia facial. Cuidado preciso para um
-                resultado natural e saudável.
-              </p>
-            </div>
-
-            <div class="service-card fade-in" style="transition-delay: 0.2s">
-              <div class="service-icon">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"
-                  />
-                </svg>
-              </div>
-              <h3>Clínica Geral</h3>
-              <p>
-                Atendimento completo para prevenção, diagnóstico e tratamento da
-                saúde bucal. Cuidado contínuo para manter seu sorriso saudável
-                em todas as fases.
-              </p>
-            </div>
-
-            <div class="service-card fade-in" style="transition-delay: 0.3s">
-              <div class="service-icon">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"
-                  />
-                </svg>
-              </div>
-              <h3>Odontopediatria</h3>
-              <p>
-                Atenção especializada para crianças, com foco em prevenção,
-                conforto e experiências positivas desde os primeiros cuidados
-                com a saúde bucal.
-              </p>
-            </div>
-
-            <div class="service-card fade-in" style="transition-delay: 0.1s">
-              <div class="service-icon">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M19.07 4.93C17.19 3.06 14.7 2 12 2s-5.19 1.06-7.07 2.93C3.06 6.81 2 9.3 2 12s1.06 5.19 2.93 7.07C6.81 20.94 9.3 22 12 22s5.19-1.06 7.07-2.93C20.94 17.19 22 14.7 22 12s-1.06-5.19-2.93-7.07zm-1.41 1.41C19.1 7.79 20 9.79 20 12H4c0-2.21.9-4.21 2.34-5.66L17.66 6.34zM6.34 17.66C4.9 16.21 4 14.21 4 12h16c0 2.21-.9 4.21-2.34 5.66L6.34 17.66z"
-                  />
-                </svg>
-              </div>
-              <h3>Cirurgia Odontológica</h3>
-              <p>
-                Procedimentos realizados com técnica, segurança e planejamento
-                individualizado. Foco no bem-estar e em uma recuperação
-                tranquila.
-              </p>
-            </div>
-
-            <div class="service-card fade-in" style="transition-delay: 0.2s">
-              <div class="service-icon">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"
-                  />
-                </svg>
-              </div>
-              <h3>Pacientes com Necessidades Especiais</h3>
-              <p>
-                Atendimento odontológico adaptado para pessoas que necessitam de
-                um cuidado diferenciado, seja por condições físicas, sensoriais,
-                emocionais ou sistêmicas. Cada consulta é conduzida com
-                acolhimento, paciência e atenção aos detalhes, garantindo
-                conforto, segurança e uma experiência tranquila.
-              </p>
-            </div>
-
-            <div class="service-card fade-in" style="transition-delay: 0.3s">
-              <div class="service-icon">
-                <svg viewBox="0 0 24 24">
-                  <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-                </svg>
-              </div>
-              <h3>Atendimento Homecare</h3>
-              <p>
-                Atendimento odontológico no conforto do seu lar, com cuidado
-                humanizado e adaptado às suas necessidades. Ideal para pacientes
-                que necessitam de mais comodidade, seguranca, e atenção
-                individualizada.
-              </p>
+              </button>
             </div>
           </div>
-          <!-- /services-track -->
-          <div class="carousel-controls">
-            <button
-              class="carousel-btn"
-              id="servicosPrev"
-              aria-label="Anterior"
-            >
-              <svg viewBox="0 0 24 24">
-                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
-              </svg>
-            </button>
-            <div class="carousel-dots" id="servicosDots"></div>
-            <button class="carousel-btn" id="servicosNext" aria-label="Próximo">
-              <svg viewBox="0 0 24 24">
-                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <!-- /services-carousel-wrap -->
-      </div>
-    </section>
-
-    <!-- ===== DIFERENCIAIS ===== -->
-    <section id="diferenciais">
-      <div class="container">
-        <div class="diff-grid">
-          <div class="diff-text fade-in-left">
-            <span class="section-tag" style="color: var(--taupe)"
-              >Por que me escolher</span
-            >
-            <h2 class="section-title">Meus <em>diferenciais</em></h2>
-            <div class="divider"></div>
-            <p>
-              Ofereço um atendimento completo, humanizado e especializado para
-              que cada paciente se sinta acolhido e obtenha os melhores
-              resultados.
-            </p>
+          <!-- Avaliar no Google -->
+          <div class="google-cta fade-in">
             <a
-              href="https://wa.me/5585998372445?text=Olá%2C%20quero%20saber%20mais%20sobre%20os%20serviços!"
+              href="https://share.google/WKhLjBEFli6y4Ym6M"
               target="_blank"
-              class="btn btn-outline"
-              style="color: var(--taupe); border-color: var(--taupe)"
+              rel="noopener"
             >
-              Fale comigo
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                  fill="#4285F4"
+                />
+                <path
+                  d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                  fill="#34A853"
+                />
+                <path
+                  d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"
+                  fill="#FBBC05"
+                />
+                <path
+                  d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                  fill="#EA4335"
+                />
+              </svg>
+              Confira no Google
             </a>
           </div>
-          <div class="diff-items fade-in-right">
-            <div class="diff-item">
-              <div class="diff-num">01</div>
-              <div>
-                <h3>Foco em DTM e Dor Orofacial</h3>
-                <p>
-                  Atuação direcionada ao diagnóstico e manejo das dores na face
-                  e mandíbula, com abordagem precisa e individualizada.
-                </p>
-              </div>
+        </div>
+      </section>
+
+      <!-- ===== FAQ ===== -->
+      <section id="faq">
+        <div class="container">
+          <div class="faq-grid">
+            <div class="faq-sticky fade-in-left">
+              <span class="section-tag">Dúvidas frequentes</span>
+              <h2 class="section-title">Perguntas <em>frequentes</em></h2>
+              <div class="divider"></div>
+              <p>
+                Tire suas principais dúvidas sobre DTM, consultas e tratamentos.
+                Se precisar de mais informações, entre em contato pelo WhatsApp.
+              </p>
+              <a
+                href="https://wa.me/5585998372445?text=Olá%2C%20tenho%20uma%20dúvida!"
+                target="_blank"
+                class="btn btn-outline"
+                >Tirar dúvidas</a
+              >
             </div>
-            <div class="diff-item">
-              <div class="diff-num">02</div>
-              <div>
-                <h3>Atendimento Personalizado</h3>
-                <p>
-                  Cada paciente é atendido de forma única, com escuta atenta,
-                  planejamento cuidadoso e respeito às suas necessidades.
-                </p>
+            <div class="accordion fade-in-right">
+              <div class="accordion-item open">
+                <button class="accordion-trigger">
+                  O que é DTM (Disfunção Temporomandibular)?
+                  <span class="accordion-icon">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion-body">
+                  <div class="accordion-body-inner">
+                    A DTM é uma condição que afeta a articulação
+                    temporomandibular (ATM) — a "dobradiça" que conecta o
+                    maxilar ao crânio. Ela pode causar dores na mandíbula, face,
+                    pescoço, ombros, dores de cabeça, travamento da boca e
+                    estalos ao abrir ou fechar a boca.
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="diff-item">
-              <div class="diff-num">03</div>
-              <div>
-                <h3>Abordagem Atualizada</h3>
-                <p>
-                  Condutas baseadas em conhecimento atual e técnicas modernas,
-                  proporcionando mais segurança, conforto e previsibilidade.
-                </p>
+              <div class="accordion-item">
+                <button class="accordion-trigger">
+                  Quais são os sintomas da DTM?
+                  <span class="accordion-icon"
+                    ><svg viewBox="0 0 24 24">
+                      <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion-body">
+                  <div class="accordion-body-inner">
+                    Os sintomas mais comuns incluem: dor ou sensibilidade na
+                    mandíbula, dores de cabeça frequentes (especialmente nas
+                    têmporas), dificuldade para abrir ou fechar a boca, estalos
+                    ou crepitação na ATM, dor de ouvido, pescoço rígido e
+                    bruxismo (ranger de dentes).
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="diff-item">
-              <div class="diff-num">04</div>
-              <div>
-                <h3>Experiência e Cuidado Integral</h3>
-                <p>
-                  Um olhar completo sobre sua saúde, integrando função, estética
-                  e bem-estar para resultados que vão além do tratamento.
-                </p>
+              <div class="accordion-item">
+                <button class="accordion-trigger">
+                  Como funciona a consulta?
+                  <span class="accordion-icon"
+                    ><svg viewBox="0 0 24 24">
+                      <path
+                        d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+                      /></svg
+                  ></span>
+                </button>
+                <div class="accordion-body">
+                  <div class="accordion-body-inner">
+                    A consulta de DTM é uma avaliação completa, para entender
+                    seus gatilhos causadores dos desconfortos, pois é condição
+                    multifatorial (diversos fatores podem causar a doença).
+                    Dessa forma, possui uma duração média de 30 a 40 minutos
+                    para entender por completo seu caso e podermos dignosticar e
+                    planejar de maneira individualizada o seu tratamento.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-trigger">
+                  Como é o tratamento?
+                  <span class="accordion-icon"
+                    ><svg viewBox="0 0 24 24">
+                      <path
+                        d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+                      /></svg
+                  ></span>
+                </button>
+                <div class="accordion-body">
+                  <div class="accordion-body-inner">
+                    A Dra. avalia o que se encaixa melhor para você, trabalhamos
+                    com várias formas de tratamento, dentre eles, liberações,
+                    placas oclusais, agulhamentos e laserterapia. A cada sessão
+                    buscamos te explicar e acompanhar sua evolução, buscando
+                    sempre ajustar de acordo com a sua necessidade.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-trigger">
+                  Como agendar uma consulta?
+                  <span class="accordion-icon"
+                    ><svg viewBox="0 0 24 24">
+                      <path
+                        d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+                      /></svg
+                  ></span>
+                </button>
+                <div class="accordion-body">
+                  <div class="accordion-body-inner">
+                    É muito fácil! Basta clicar no botão de WhatsApp em qualquer
+                    parte desta página ou enviar uma mensagem diretamente para o
+                    número (85) 99837-2445. Respondemos rapidamente e
+                    encontramos o melhor horário para você.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ===== CASOS CLÍNICOS ===== -->
-    <section id="casos">
-      <div class="container">
-        <div class="casos-header fade-in">
-          <span class="section-tag">Resultados reais</span>
-          <h2 class="section-title">Casos <em>clínicos</em></h2>
-          <div class="divider"></div>
-          <p
-            style="font-size: 15px; line-height: 1.9; color: var(--taupe-dark)"
-          >
-            Cada caso é único. Veja a transformação de alguns pacientes tratados
-            com dedicação e abordagem individualizada.
+      <!-- ===== LOCALIZAÇÃO ===== -->
+      <section id="localizacao">
+        <div class="container">
+          <div class="loc-grid">
+            <div class="loc-info fade-in-left">
+              <span class="section-tag">Onde me encontrar</span>
+              <h2 class="section-title">Localização <em>&amp; contato</em></h2>
+              <div class="divider"></div>
+              <p>Fortaleza, CE.</p>
+              <ul class="loc-details">
+                <li>
+                  <div class="loc-icon">
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <strong
+                      style="
+                        display: block;
+                        font-size: 14px;
+                        margin-bottom: 2px;
+                      "
+                      >Localização</strong
+                    >
+                    Av. Dr. Silas Munguba, 1140 - Parangaba
+                  </div>
+                </li>
+                <li>
+                  <div class="loc-icon">
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <strong
+                      style="
+                        display: block;
+                        font-size: 14px;
+                        margin-bottom: 2px;
+                      "
+                      >WhatsApp</strong
+                    >
+                    <a
+                      href="https://wa.me/5585998372445"
+                      target="_blank"
+                      style="color: var(--taupe-dark)"
+                      >(85) 99837-2445</a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="loc-icon">
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <strong
+                      style="
+                        display: block;
+                        font-size: 14px;
+                        margin-bottom: 2px;
+                      "
+                      >Instagram
+                    </strong>
+                    <a
+                      href="https://instagram.com/dra.camila_lobo"
+                      target="_blank"
+                      style="color: var(--taupe-dark)"
+                      >@dra.camila_lobo</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="map-placeholder fade-in-right">
+              <iframe
+                src="https://maps.google.com/maps?cid=15256395420467539548&output=embed&hl=pt-BR&z=16"
+                title="Localização Dra. Camila Lôbo"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CTA BANNER ===== -->
+      <div class="cta-banner">
+        <div class="container fade-in">
+          <h2>Pronto para <em>transformar</em><br />sua saúde bucal?</h2>
+          <p>
+            Agende sua consulta agora e dê o primeiro passo para uma vida sem
+            dor.
           </p>
-        </div>
-        <div class="casos-carousel-wrap fade-in">
-          <div class="casos-track" id="casosTrack">
-            <div class="caso-card fade-in">
-              <div class="caso-fotos caso-fotos--single">
-                <div class="caso-foto">
-                  <img src="assets/images/ca1.webp" loading="lazy" decoding="async" alt="Caso 01" />
-                </div>
-              </div>
-              <div class="caso-info">
-                <p class="caso-num">Caso 01</p>
-                <p class="caso-titulo"></p>
-              </div>
-            </div>
-
-            <div class="caso-card fade-in">
-              <div class="caso-fotos caso-fotos--single">
-                <div class="caso-foto">
-                  <img src="assets/images/cb1.webp" loading="lazy" decoding="async" alt="Caso 02" />
-                </div>
-              </div>
-              <div class="caso-info">
-                <p class="caso-num">Caso 02</p>
-                <p class="caso-titulo"></p>
-              </div>
-            </div>
-
-            <div class="caso-card fade-in">
-              <div class="caso-fotos">
-                <div class="caso-foto">
-                  <img src="assets/images/cd1.webp" loading="lazy" decoding="async" alt="Caso C – antes" />
-                  <span class="caso-foto-label">Antes</span>
-                </div>
-                <div class="caso-foto">
-                  <img src="assets/images/cd2.webp" loading="lazy" decoding="async" alt="Caso C – depois" />
-                  <span class="caso-foto-label">Depois</span>
-                </div>
-              </div>
-              <div class="caso-info">
-                <p class="caso-num">Caso 03</p>
-                <p class="caso-titulo">Reabilitação e Equilíbrio Oclusal</p>
-              </div>
-            </div>
-
-            <div class="caso-card fade-in">
-              <div class="caso-fotos">
-                <div class="caso-foto">
-                  <img src="assets/images/ce1.webp" loading="lazy" decoding="async" alt="Caso D – antes" />
-                  <span class="caso-foto-label">Antes</span>
-                </div>
-                <div class="caso-foto">
-                  <img src="assets/images/ce2.webp" loading="lazy" decoding="async" alt="Caso D – depois" />
-                  <span class="caso-foto-label">Depois</span>
-                </div>
-              </div>
-              <div class="caso-info">
-                <p class="caso-num">Caso 04</p>
-                <p class="caso-titulo">Gengivoplastia - Estética Vermelha</p>
-              </div>
-            </div>
-
-            <div class="caso-card fade-in">
-              <div class="caso-fotos">
-                <div class="caso-foto">
-                  <img src="assets/images/cf1.webp" loading="lazy" decoding="async" alt="Caso E – antes" />
-                  <span class="caso-foto-label">Antes</span>
-                </div>
-                <div class="caso-foto">
-                  <img src="assets/images/cf2.webp" loading="lazy" decoding="async" alt="Caso E – depois" />
-                  <span class="caso-foto-label">Depois</span>
-                </div>
-              </div>
-              <div class="caso-info">
-                <p class="caso-num">Caso 05</p>
-                <p class="caso-titulo">Restauração Estética e Recontornos com Naturalidade</p>
-              </div>
-            </div>
-
-            <div class="caso-card fade-in">
-              <div class="caso-fotos">
-                <div class="caso-foto">
-                  <img src="assets/images/cg1.webp" loading="lazy" decoding="async" alt="Caso F – antes" />
-                  <span class="caso-foto-label">Antes</span>
-                </div>
-                <div class="caso-foto">
-                  <img src="assets/images/cg2.webp" loading="lazy" decoding="async" alt="Caso F – depois" />
-                  <span class="caso-foto-label">Depois</span>
-                </div>
-              </div>
-              <div class="caso-info">
-                <p class="caso-num">Caso 06</p>
-                <p class="caso-titulo">Gengivoplastia - Estética Vermelha</p>
-              </div>
-            </div>
-
-            <div class="caso-card fade-in">
-              <div class="caso-fotos">
-                <div class="caso-foto">
-                  <img src="assets/images/ch1.webp" loading="lazy" decoding="async" alt="Caso G – antes" />
-                  <span class="caso-foto-label">Antes</span>
-                </div>
-                <div class="caso-foto">
-                  <img src="assets/images/ch2.webp" loading="lazy" decoding="async" alt="Caso G – depois" />
-                  <span class="caso-foto-label">Depois</span>
-                </div>
-              </div>
-              <div class="caso-info">
-                <p class="caso-num">Caso 07</p>
-                <p class="caso-titulo">Harmonização do Sorriso - Estética Vermelha e Estética Branca</p>
-              </div>
-            </div>
-
-            <div class="caso-card fade-in">
-              <div class="caso-fotos">
-                <div class="caso-foto">
-                  <img src="assets/images/ci1.webp" loading="lazy" decoding="async" alt="Caso H – antes" />
-                  <span class="caso-foto-label">Antes</span>
-                </div>
-                <div class="caso-foto">
-                  <img src="assets/images/ci2.webp" loading="lazy" decoding="async" alt="Caso H – depois" />
-                  <span class="caso-foto-label">Depois</span>
-                </div>
-              </div>
-              <div class="caso-info">
-                <p class="caso-num">Caso 08</p>
-                <p class="caso-titulo">Clareamento Dental e Estética Branca</p>
-              </div>
-            </div>
-          </div>
-          <!-- /casos-track -->
-          <div class="carousel-controls">
-            <button class="carousel-btn" id="casosPrev" aria-label="Anterior">
-              <svg viewBox="0 0 24 24">
-                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
-              </svg>
-            </button>
-            <div class="carousel-dots" id="casosDots"></div>
-            <button class="carousel-btn" id="casosNext" aria-label="Próximo">
-              <svg viewBox="0 0 24 24">
-                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <!-- /casos-carousel-wrap -->
-      </div>
-    </section>
-
-    <!-- ===== DEPOIMENTOS ===== -->
-    <section id="depoimentos">
-      <div class="container">
-        <div class="depo-header fade-in">
-          <span class="section-tag">Depoimentos</span>
-          <h2 class="section-title">O que meus <em>pacientes</em> dizem</h2>
-          <div class="divider"></div>
-        </div>
-        <div class="carousel-wrap fade-in">
-          <div class="carousel-track" id="depoTrack">
-            <div class="depo-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                Ótimo atendimento! Muito tranquila, muito segura, teve muita
-                paciência, me explicou tudo direitinho. Recomendo sem medo
-                algum.
-              </blockquote>
-              <div class="depo-author">
-                <div class="author-avatar">J</div>
-                <div>
-                  <div class="author-name">João Vitor</div>
-                  <div class="author-role">Local Guide · Paciente</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="depo-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                A Dra. Camila é simplesmente incrível! Cheguei no consultório
-                cheio de dúvidas e dores, e ela me atendeu super bem, com muita
-                atenção. O tratamento deu super certo e finalmente fiquei livre
-                das dores! Além de ótima profissional, é super gente boa!
-              </blockquote>
-              <div class="depo-author">
-                <div class="author-avatar">D</div>
-                <div>
-                  <div class="author-name">Danilo Pereira</div>
-                  <div class="author-role">Paciente</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="depo-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                A Dra. Camila foi simplesmente maravilhosa! Estava com um
-                problema que já vinha me incomodando há tempos, e ela soube
-                exatamente como tratar com competência e sensibilidade. Seu
-                atendimento é humanizado, cuidadoso e extremamente profissional.
-                Saí do consultório aliviado e confiante. Recomendo demais!
-              </blockquote>
-              <div class="depo-author">
-                <div class="author-avatar">M</div>
-                <div>
-                  <div class="author-name">Matheus Jardilino</div>
-                  <div class="author-role">Local Guide · Paciente</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="depo-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                Tive uma excelente experiência com a Dra. Camila. Desde o
-                primeiro atendimento, ela foi extremamente atenciosa,
-                profissional e cuidadosa. Eu estava com um problema que já me
-                incomodava há algum tempo, e ela rapidamente identificou a
-                causa.
-              </blockquote>
-              <div class="depo-author">
-                <div class="author-avatar">D</div>
-                <div>
-                  <div class="author-name">Débora Vitória</div>
-                  <div class="author-role">Paciente</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="depo-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                Senti uma diferença enorme após ser tratado pela Dra. Camila.
-                Ela me atendeu com paciência, escutou minhas queixas e propôs um
-                plano ótimo que realmente funcionou. Muito feliz com o
-                resultado.
-              </blockquote>
-              <div class="depo-author">
-                <div class="author-avatar">L</div>
-                <div>
-                  <div class="author-name">Luis Carlos Vieira Queiroz</div>
-                  <div class="author-role">Paciente</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="depo-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                Tive a grata satisfação de ser atendida pela Dra. Camila,
-                cirurgiã-dentista especialista em DTM/ATM e laserterapia, cuja
-                conduta profissional e excelência técnica merecem ser
-                destacadas.
-              </blockquote>
-              <div class="depo-author">
-                <div class="author-avatar">R</div>
-                <div>
-                  <div class="author-name">Rute Oliveira</div>
-                  <div class="author-role">Paciente</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="depo-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                Excelente atendimento! A Dra. Camila demonstrou total domínio na
-                área e foi super atenciosa do início ao fim. O tratamento foi
-                eficaz e já senti a melhora logo nos primeiros dias. A clínica é
-                organizada e o ambiente, muito agradável. Só tenho elogios!
-              </blockquote>
-              <div class="depo-author">
-                <div class="author-avatar">E</div>
-                <div>
-                  <div class="author-name">Eduardo Forte</div>
-                  <div class="author-role">Paciente</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="depo-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                Fiquei muito satisfeita com o atendimento da Dra. Camila. Ela
-                foi muito clara nas explicações, me passou segurança desde o
-                início e, o mais importante, resolveu meu problema com
-                eficiência. Além de ser uma excelente dentista, é muito
-                simpática.
-              </blockquote>
-              <div class="depo-author">
-                <div class="author-avatar">C</div>
-                <div>
-                  <div class="author-name">Catarina Sousa</div>
-                  <div class="author-role">Paciente</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="depo-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                Fui atendido pela Dra. Camila e só tenho elogios! Ela foi muito
-                atenciosa, explicou cada etapa do tratamento com clareza e me
-                deixou totalmente tranquilo. É raro encontrar alguém tão
-                dedicada e cuidadosa.
-              </blockquote>
-              <div class="depo-author">
-                <div class="author-avatar">F</div>
-                <div>
-                  <div class="author-name">Felipe Timbó</div>
-                  <div class="author-role">Paciente</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="depo-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                Finalizei hoje o meu tratamento com a Dra. Camila, esperei
-                finalizar para poder avaliar. Quero deixar registrado minha
-                gratidão à profissional, por toda sua atenção e dedicação.
-              </blockquote>
-              <div class="depo-author">
-                <div class="author-avatar">R</div>
-                <div>
-                  <div class="author-name">Robinson Andres</div>
-                  <div class="author-role">Paciente</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="depo-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                A Dra é incrível, atendeu a mim e aos meus problemas com
-                excelência, impecável. Me sinto muito bem cuidada pelas mãos
-                dela e o processo tem vindo com resultados cada vez melhores,
-                realmente perfeito.
-              </blockquote>
-              <div class="depo-author">
-                <div class="author-avatar">L</div>
-                <div>
-                  <div class="author-name">Lara Isabela Souza</div>
-                  <div class="author-role">Paciente</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="depo-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                Dra Camila é muito atenciosa e prestativa. Me deu atenção e todo
-                cuidado em um momento de crise. Não senti mais dores, graças a
-                Deus e os cuidados dela.
-              </blockquote>
-              <div class="depo-author">
-                <div class="author-avatar">J</div>
-                <div>
-                  <div class="author-name">Jéssica Gomes</div>
-                  <div class="author-role">Paciente</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="depo-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                Foi o melhor atendimento que já tive. Venho buscando há muito
-                tempo um atendimento que realmente resolvesse meu problema, mas
-                a Dra Camila foi um achado!
-              </blockquote>
-              <div class="depo-author">
-                <div class="author-avatar">R</div>
-                <div>
-                  <div class="author-name">Rubens Andres</div>
-                  <div class="author-role">Paciente</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="depo-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                Excelente profissional! Atenciosa, paciente e muito competente.
-                Tive um atendimento confortável e recomendo!
-              </blockquote>
-              <div class="depo-author">
-                <div class="author-avatar">L</div>
-                <div>
-                  <div class="author-name">Luanda Ashley</div>
-                  <div class="author-role">Paciente</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="depo-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                Atenciosa e cuidadosa. Estou em tratamento com ela ainda, mas
-                estou sentindo a melhora gradativa, principalmente depois do
-                laser. Ótima profissional, recomendo.
-              </blockquote>
-              <div class="depo-author">
-                <div class="author-avatar">L</div>
-                <div>
-                  <div class="author-name">Luan Ribeiro</div>
-                  <div class="author-role">Paciente</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="depo-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                Agendei uma consulta com a doutora, muito atenciosa, tirou todas
-                as minhas dúvidas e trouxe todas as recomendações. Foi muito
-                bom. Recomendo.
-              </blockquote>
-              <div class="depo-author">
-                <div class="author-avatar">M</div>
-                <div>
-                  <div class="author-name">Marcelle Tabosa</div>
-                  <div class="author-role">Paciente</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="depo-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                Melhor dentista que fui na minha vida! Muito profissional, sanou
-                todas as minhas dúvidas e ainda me tranquilizou com o processo.
-                Recomendo demais!
-              </blockquote>
-              <div class="depo-author">
-                <div class="author-avatar">G</div>
-                <div>
-                  <div class="author-name">Gabriel Dias</div>
-                  <div class="author-role">Paciente</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="depo-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                Tenho bruxismo e estou muito satisfeito com o acompanhamento que
-                venho tendo com a Dra. Camila.
-              </blockquote>
-              <div class="depo-author">
-                <div class="author-avatar">G</div>
-                <div>
-                  <div class="author-name">Gabriel Cardoso</div>
-                  <div class="author-role">Local Guide · Paciente</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="depo-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                Excelente profissional, atenciosa e paciente, super indico!
-              </blockquote>
-              <div class="depo-author">
-                <div class="author-avatar">G</div>
-                <div>
-                  <div class="author-name">Giovanna Silva</div>
-                  <div class="author-role">Paciente</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- controles -->
-          <div class="carousel-controls">
-            <button class="carousel-btn" id="depoPrev" aria-label="Anterior">
-              <svg viewBox="0 0 24 24">
-                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
-              </svg>
-            </button>
-            <div class="carousel-dots" id="depoDots"></div>
-            <button class="carousel-btn" id="depoNext" aria-label="Próximo">
-              <svg viewBox="0 0 24 24">
-                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <!-- Avaliar no Google -->
-        <div class="google-cta fade-in">
           <a
-            href="https://share.google/WKhLjBEFli6y4Ym6M"
+            href="https://wa.me/5585998372445?text=Olá%20Dra.%20Camila%2C%20gostaria%20de%20agendar%20uma%20consulta!"
             target="_blank"
-            rel="noopener"
+            class="btn btn-primary"
           >
-            <svg viewBox="0 0 24 24" fill="none">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#BDB2AA">
               <path
-                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
-                fill="#4285F4"
-              />
-              <path
-                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
-                fill="#34A853"
-              />
-              <path
-                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"
-                fill="#FBBC05"
-              />
-              <path
-                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
-                fill="#EA4335"
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
               />
             </svg>
-            Confira no Google
+            Agendar pelo WhatsApp
           </a>
         </div>
       </div>
-    </section>
-
-    <!-- ===== FAQ ===== -->
-    <section id="faq">
-      <div class="container">
-        <div class="faq-grid">
-          <div class="faq-sticky fade-in-left">
-            <span class="section-tag">Dúvidas frequentes</span>
-            <h2 class="section-title">Perguntas <em>frequentes</em></h2>
-            <div class="divider"></div>
-            <p>
-              Tire suas principais dúvidas sobre DTM, consultas e tratamentos.
-              Se precisar de mais informações, entre em contato pelo WhatsApp.
-            </p>
-            <a
-              href="https://wa.me/5585998372445?text=Olá%2C%20tenho%20uma%20dúvida!"
-              target="_blank"
-              class="btn btn-outline"
-              >Tirar dúvidas</a
-            >
-          </div>
-          <div class="accordion fade-in-right">
-            <div class="accordion-item open">
-              <button class="accordion-trigger">
-                O que é DTM (Disfunção Temporomandibular)?
-                <span class="accordion-icon">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
-                  </svg>
-                </span>
-              </button>
-              <div class="accordion-body">
-                <div class="accordion-body-inner">
-                  A DTM é uma condição que afeta a articulação temporomandibular
-                  (ATM) — a "dobradiça" que conecta o maxilar ao crânio. Ela
-                  pode causar dores na mandíbula, face, pescoço, ombros, dores
-                  de cabeça, travamento da boca e estalos ao abrir ou fechar a
-                  boca.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button class="accordion-trigger">
-                Quais são os sintomas da DTM?
-                <span class="accordion-icon"
-                  ><svg viewBox="0 0 24 24">
-                    <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></svg
-                ></span>
-              </button>
-              <div class="accordion-body">
-                <div class="accordion-body-inner">
-                  Os sintomas mais comuns incluem: dor ou sensibilidade na
-                  mandíbula, dores de cabeça frequentes (especialmente nas
-                  têmporas), dificuldade para abrir ou fechar a boca, estalos ou
-                  crepitação na ATM, dor de ouvido, pescoço rígido e bruxismo
-                  (ranger de dentes).
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button class="accordion-trigger">
-                Como funciona a consulta?
-                <span class="accordion-icon"
-                  ><svg viewBox="0 0 24 24">
-                    <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></svg
-                ></span>
-              </button>
-              <div class="accordion-body">
-                <div class="accordion-body-inner">
-                  A consulta de DTM é uma avaliação completa, para entender seus
-                  gatilhos causadores dos desconfortos, pois é condição
-                  multifatorial (diversos fatores podem causar a doença). Dessa
-                  forma, possui uma duração média de 30 a 40 minutos para
-                  entender por completo seu caso e podermos dignosticar e
-                  planejar de maneira individualizada o seu tratamento.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button class="accordion-trigger">
-                Como é o tratamento?
-                <span class="accordion-icon"
-                  ><svg viewBox="0 0 24 24">
-                    <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></svg
-                ></span>
-              </button>
-              <div class="accordion-body">
-                <div class="accordion-body-inner">
-                  A Dra. avalia o que se encaixa melhor para você, trabalhamos
-                  com várias formas de tratamento, dentre eles, liberações,
-                  placas oclusais, agulhamentos e laserterapia. A cada sessão
-                  buscamos te explicar e acompanhar sua evolução, buscando
-                  sempre ajustar de acordo com a sua necessidade.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button class="accordion-trigger">
-                Como agendar uma consulta?
-                <span class="accordion-icon"
-                  ><svg viewBox="0 0 24 24">
-                    <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></svg
-                ></span>
-              </button>
-              <div class="accordion-body">
-                <div class="accordion-body-inner">
-                  É muito fácil! Basta clicar no botão de WhatsApp em qualquer
-                  parte desta página ou enviar uma mensagem diretamente para o
-                  número (85) 99837-2445. Respondemos rapidamente e encontramos
-                  o melhor horário para você.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== LOCALIZAÇÃO ===== -->
-    <section id="localizacao">
-      <div class="container">
-        <div class="loc-grid">
-          <div class="loc-info fade-in-left">
-            <span class="section-tag">Onde me encontrar</span>
-            <h2 class="section-title">Localização <em>&amp; contato</em></h2>
-            <div class="divider"></div>
-            <p>Fortaleza, CE.</p>
-            <ul class="loc-details">
-              <li>
-                <div class="loc-icon">
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <strong
-                    style="display: block; font-size: 14px; margin-bottom: 2px"
-                    >Localização</strong
-                  >
-                  Av. Dr. Silas Munguba, 1140 - Parangaba
-                </div>
-              </li>
-              <li>
-                <div class="loc-icon">
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <strong
-                    style="display: block; font-size: 14px; margin-bottom: 2px"
-                    >WhatsApp</strong
-                  >
-                  <a
-                    href="https://wa.me/5585998372445"
-                    target="_blank"
-                    style="color: var(--taupe-dark)"
-                    >(85) 99837-2445</a
-                  >
-                </div>
-              </li>
-              <li>
-                <div class="loc-icon">
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <strong
-                    style="display: block; font-size: 14px; margin-bottom: 2px"
-                    >Instagram</strong
-                  >
-                  <a
-                    href="https://instagram.com/dra.camila_lobo"
-                    target="_blank"
-                    style="color: var(--taupe-dark)"
-                    >@dra.camila_lobo</a
-                  >
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="map-placeholder fade-in-right">
-            <iframe
-              src="https://maps.google.com/maps?cid=15256395420467539548&output=embed&hl=pt-BR&z=16"
-              title="Localização Dra. Camila Lôbo"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== CTA BANNER ===== -->
-    <div class="cta-banner">
-      <div class="container fade-in">
-        <h2>Pronto para <em>transformar</em><br />sua saúde bucal?</h2>
-        <p>
-          Agende sua consulta agora e dê o primeiro passo para uma vida sem dor.
-        </p>
-        <a
-          href="https://wa.me/5585998372445?text=Olá%20Dra.%20Camila%2C%20gostaria%20de%20agendar%20uma%20consulta!"
-          target="_blank"
-          class="btn btn-primary"
-        >
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#BDB2AA">
-            <path
-              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
-            />
-          </svg>
-          Agendar pelo WhatsApp
-        </a>
-      </div>
-    </div>
-
     </main>
 
     <!-- ===== FOOTER ===== -->
