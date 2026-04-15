@@ -1,7 +1,10 @@
 // ── Hamburger menu
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
-hamburger.addEventListener("click", () => navLinks.classList.toggle("open"));
+hamburger.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("open");
+  hamburger.setAttribute("aria-expanded", isOpen);
+});
 navLinks
   .querySelectorAll("a")
   .forEach((a) =>
